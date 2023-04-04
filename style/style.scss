@@ -47,7 +47,7 @@ p {
     font-family: 'Montserrat';
     font-size: 1.25vw;
     font-weight: 300;
-    position: absolute;   
+    position: absolute;
     bottom: -4vw;
     right: -4vw;
   }
@@ -103,7 +103,6 @@ p {
       width: 50vw;
       display: flex;
       align-items: center;
-
 
       .header__list {
         display: flex;
@@ -176,7 +175,7 @@ p {
         address {
           color: white;
           font-style: normal;
-          font-size: 0.75vw;
+          font-size: 0.72vw;
         }
       }
     }
@@ -467,7 +466,6 @@ p {
   }
 
   .more {
-
     font-size: 1.25vw;
     width: 10vw;
     height: 2.16vw;
@@ -480,7 +478,6 @@ p {
     border-radius: 6.66vw;
 
     font-weight: 300;
-
   }
 }
 
@@ -556,4 +553,96 @@ p {
 
 .white {
   color: white;
+}
+
+.section-4 {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 6.5vw;
+  padding-bottom: 6.5vw;
+
+  background-image: url('../assets/background/form-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vw;
+
+    fieldset {
+      background-color: white;
+      width: 57vw;
+      height: 58vw;
+      padding: 6vw;
+      border-radius: 3vw;
+      box-shadow: 0 0 1vw black;
+
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1.5vw;
+
+      .heading {
+        font-family: 'Bicubik';
+        font-size: 3.5vw;
+        text-align: center;
+        
+        padding-bottom: 3vw;
+      }
+
+      select {
+        width: 100%;
+
+        padding: 2vw 3vw;
+        border: .16vw solid var(--red);
+        border-radius: 3vw;
+
+        display: flex;
+        // align-items: center;
+        // justify-content: center;
+        flex-direction: column;
+
+        &::placeholder {
+          font-size: 2vw;
+          color: var(--red);
+        }
+
+        option {
+          background-color: green;
+          font-size: 2vw;
+          color: var(--red);
+        }
+      }
+
+      input {
+        width: 100%;
+        padding: 2vw 3vw;
+        border: .16vw solid var(--red);
+        border-radius: 3vw;
+
+        &::placeholder {
+          font-size: 2vw;
+          color: var(--red);
+        }  
+      }
+
+      .request {
+        margin-top: 5vw;
+        width: auto;
+        padding: 1vw 2vw;
+        background-color: var(--red);
+        border-radius: 3vw;
+        color: white;
+        font-size: 2vw;
+        font-weight: 300;
+        cursor: pointer;
+      }
+    }
+  }
 }

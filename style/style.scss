@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @font-face {
   font-family: 'Bicubik';
   src: url('../assets/fonts/Bicubik/Bicubik.OTF');
+}
+
+:root {
+  --red: #A30000;
 }
 
 * {
@@ -16,11 +21,19 @@ h1 {
   font-size: 5vw;
 }
 
+h2 {
+  font-size: 2.6vw;
+  font-weight: bold;
+  color: white;
+}
+
+p {
+  font-size: 2vw;
+  font-weight: 300;
+}
+
 .section-1 {
-  width: 100vw;
-  height: 100vh;
-  
-  margin: 0 auto;
+  height: 55vw;
 
   background-image: url('../assets/background/main-first-section-bg.jpg');
   background-size: 100%;
@@ -28,21 +41,21 @@ h1 {
 
   .header {
     height: 11vw;
-  
+
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1.5vw 3.5vw;
-    
+
     .header-container {
       width: 100%;
       height: 8vw;
 
-      padding: 0 3.5vw;
+      padding: 0 3vw;
       border-radius: 6.66vw;
 
-      background-color: #A30000;
-      box-shadow: 0px 0px 2vw #A30000;
+      background-color: var(--red);
+      box-shadow: 0px 0px 2vw var(--red);
 
 
       display: flex;
@@ -54,9 +67,9 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%; 
+        height: 100%;
 
-        img {   
+        img {
           width: 14vw;
           height: 100%;
           display: flex;
@@ -75,7 +88,7 @@ h1 {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2.5vw;
+        gap: 2vw;
 
         list-style-type: none;
 
@@ -87,7 +100,7 @@ h1 {
           a {
             font-size: 1.8vw;
             color: white;
-            
+
             text-decoration: none;
           }
         }
@@ -106,22 +119,22 @@ h1 {
         height: 2.5vw;
 
         cursor: pointer;
-        
+
         border: none;
         border-radius: 6.66vw;
         padding: 0 0.5vw;
-        
+
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         color: white;
         background-color: black;
         font-size: 1vw;
       }
 
       .contacts {
-        width: 13vw;
+        width: 13.5vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -138,7 +151,7 @@ h1 {
             font-size: 1.5vw;
           }
         }
-        
+
         address {
           color: white;
           font-style: normal;
@@ -150,20 +163,18 @@ h1 {
 
   .section-1__content {
     padding: 4.25vw 0px 0px 7.66vw;
-    height: 45.41vw;
+    height: 44vw;
     color: white;
     background-image: url('../assets/red-line.png');
     background-position: 5.83vw 9.16vw;
     background-size: 55vw;
     background-repeat: no-repeat;
-    
+
     .section-1__content__text-container {
       width: calc(100vw * 0.6);
 
       .info-text {
         padding-top: 2.5vw;
-        font-size: 2vw;
-        font-weight: 300;
       }
     }
 
@@ -172,16 +183,16 @@ h1 {
       display: flex;
       gap: 1.25vw;
 
-      .whatsapp{
+      .whatsapp {
         width: 4.16vw;
         height: 4.16vw;
         border-radius: 6.66vw;
         background-image: url('../assets/icons/whatsapp.png');
         background-size: cover;
-        background-color: #A30000;
+        background-color: var(--red);
         background-repeat: no-repeat;
         cursor: pointer;
-        box-shadow: 0 0 1.66vw #A30000;
+        box-shadow: 0 0 1.66vw var(--red);
       }
 
       .telegram {
@@ -190,10 +201,10 @@ h1 {
         border-radius: 6.66vw;
         background-image: url('../assets/icons/telegram.png');
         background-size: cover;
-        background-color: #A30000;
+        background-color: var(--red);
         background-repeat: no-repeat;
         cursor: pointer;
-        box-shadow: 0 0 1.66vw #A30000;
+        box-shadow: 0 0 1.66vw var(--red);
       }
 
       .try-lesson {
@@ -202,12 +213,249 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #A30000;
+        background-color: var(--red);
         border-radius: 6.66vw;
-        box-shadow: 0 0 1.66vw #A30000;
+        box-shadow: 0 0 1.66vw var(--red);
         font-size: 2.33vw;
         cursor: pointer;
       }
     }
+  }
+}
+
+.section-2 {
+
+  padding: 7vw 7.5vw 5vw 7.5vw;
+
+  background-image: url('../assets/section-2-illustration.png'), url('../assets/background/white-bg.jpg');
+  background-size: 55%, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position-X: 100%;
+
+  .section-2__menu {
+
+    .section-2__list {
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      padding-top: 4vw;
+
+      list-style-type: none;
+      gap: 2.5vw;
+
+      .section-2__item {
+        // padding-top: 1vw;
+        padding: 1vw 2.25vw 1vw 2.25vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: .16vw solid var(--red);
+        border-radius: 6.66vw;
+        font-size: 2vw;
+        color: var(--red);
+        cursor: pointer;
+
+      }
+
+      .selected {
+        background-color: var(--red);
+        color: white;
+      }
+    }
+  }
+
+  .section-2__content {
+    padding-top: 5vw;
+
+    .section-2__cards {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      // align-items: center;
+      gap: 1.5vw;
+
+      .acoustic-guitar {
+        min-width: 27vw;
+        height: 14vw;
+        border-radius: 2vw;
+        border: .16vw solid var(--red);
+        background: url('../assets/acoustic-guitar.png');
+        background-color: red;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+      }
+
+      .electric-guitar {
+        min-width: 27vw;
+        height: 14vw;
+        border-radius: 2vw;
+        border: .16vw solid var(--red);
+        background: url('../assets/acoustic-guitar.png');
+        background-color: red;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+        
+      }
+
+      .bass-guitar {
+        min-width: 27vw;
+        height: 14vw;
+        border-radius: 2vw;
+        border: .16vw solid var(--red);
+        background: url('../assets/acoustic-guitar.png');
+        background-color: red;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+      }
+
+      .pop-vocal {
+        min-width: 27vw;
+        height: 14vw;
+        border-radius: 2vw;
+        border: .16vw solid var(--red);
+        background: url('../assets/acoustic-guitar.png');
+        background-color: red;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+      }
+
+      .folk-vocal {
+        min-width: 27vw;
+        height: 14vw;
+        border-radius: 2vw;
+        border: .16vw solid var(--red);
+        background: url('../assets/acoustic-guitar.png');
+        background-color: red;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+      }
+
+      .academic-vocal {
+        min-width: 27vw;
+        height: 14vw;
+        border-radius: 2vw;
+        border: .16vw solid var(--red);
+        background: url('../assets/acoustic-guitar.png');
+        background-color: red;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+      }
+    }
+  }
+}
+
+.buttons-container {
+  padding-top: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  .all-courses {
+    width: 17vw;
+    height: 4vw;
+    background-color: white;
+    border: .16vw solid var(--red);
+    border-radius: 6.66vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    a:link, a:visited {
+      text-decoration: none;
+      color: var(--red);
+      font-size: 2vw;
+      font-weight: 300;
+    }
+  }
+  
+  .sign {
+    width: 17vw;
+    height: 4vw;
+    background-color: var(--red);
+    border-radius: 6.66vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    a:link, a:visited {
+      text-decoration: none;
+      color: white;
+      font-size: 2vw;
+      font-weight: 300;
+    }
+  }
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+  padding: 1vw 3.5vw 0;
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
+
+  background-color: rgba(0, 0, 0, 0.3);
+
+  div {
+    display: flex;
+    justify-content: center;
+  }
+  .more {
+
+    font-size: 1.25vw;
+    width: 10vw;
+    height: 2.16vw;
+    color: white;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 6.66vw;
+
+    font-weight: 300;
+
   }
 }

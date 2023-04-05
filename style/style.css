@@ -632,8 +632,8 @@ p {
 }
 .section-8 .icon-container {
   padding-bottom: 1vw;
-  display: flex;
   gap: 1vw;
+  display: flex;
 }
 .section-8 .icon-container .whatsapp {
   box-shadow: initial;
@@ -644,12 +644,13 @@ p {
 .section-8 .icon-container .tiktok {
   box-shadow: initial;
 }
-.section-8 .callback-footer {
+.section-8 .callback-contacts {
   font-size: 1.25vw;
   font-weight: 300;
 }
 
 .whatsapp {
+  display: block;
   width: 4.16vw;
   height: 4.16vw;
   border-radius: 6.66vw;
@@ -662,6 +663,7 @@ p {
 }
 
 .telegram {
+  display: block;
   width: 4.16vw;
   height: 4.16vw;
   border-radius: 6.66vw;
@@ -674,6 +676,7 @@ p {
 }
 
 .tiktok {
+  display: block;
   width: 4.16vw;
   height: 4.16vw;
   border-radius: 6.66vw;
@@ -683,6 +686,10 @@ p {
   background-repeat: no-repeat;
   cursor: pointer;
   box-shadow: 0 0 1.66vw var(--red);
+}
+.tiktok a {
+  width: 100%;
+  height: 100%;
 }
 
 .callback {
@@ -700,26 +707,106 @@ p {
   background-color: var(--red);
   padding: 5.33vw 7.5vw;
 }
-.footer .footer__menu {
-  height: 100%;
-  width: 45vw;
+.footer .footer__top-line {
+  width: 100%;
+  height: 50%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-}
-.footer .footer__menu .footer__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 2vw;
+}
+.footer .footer__top-line img {
+  width: 23vw;
+}
+.footer .footer__top-line .footer__menu {
+  height: 100%;
+  width: 21.1vw;
+  display: flex;
+}
+.footer .footer__top-line .footer__menu .footer__list {
+  display: flex;
+  max-height: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1vw;
   list-style-type: none;
 }
-.footer .footer__menu .footer__list .footer__item {
+.footer .footer__top-line .footer__menu .footer__list .footer__item {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 2vw;
 }
-.footer .footer__menu .footer__list .footer__item a {
+.footer .footer__top-line .footer__menu .footer__list .footer__item a {
   font-size: 1.8vw;
   color: white;
   text-decoration: none;
+}
+.footer .footer__top-line .footer__icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .footer__top-line .footer__icons-container .icon-container {
+  width: 100%;
+  padding-bottom: 1vw;
+  gap: 1vw;
+  display: flex;
+}
+.footer .footer__top-line .footer__icons-container .icon-container .whatsapp {
+  width: 6.25vw;
+  height: 6.25vw;
+  background-size: 7.5vw 7.5vw;
+  background-position: center center;
+  box-shadow: initial;
+  border: 0.16vw solid white;
+}
+.footer .footer__top-line .footer__icons-container .icon-container .telegram {
+  width: 6.25vw;
+  height: 6.25vw;
+  background-size: 7.5vw 7.5vw;
+  background-position: center center;
+  box-shadow: initial;
+  border: 0.16vw solid white;
+}
+.footer .footer__top-line .footer__icons-container .icon-container .tiktok {
+  width: 6.25vw;
+  height: 6.25vw;
+  background-size: 7.5vw 7.5vw;
+  background-position: center center;
+  box-shadow: initial;
+  border: 0.16vw solid white;
+}
+.footer .footer__top-line .callback-footer {
+  font-size: 2vw;
+  font-weight: 300;
+}
+.footer .footer__bottom-line {
+  padding-top: 1vw;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__bottom-line p {
+  font-size: 1.5vw;
+  color: white;
+}
+.footer .footer__bottom-line .footer__contacts-container {
+  padding-top: 2vw;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.footer .footer__bottom-line .footer__contacts-container a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.83vw;
+}
+.footer .footer__bottom-line .footer__contacts-container address {
+  color: white;
+  font-style: normal;
+  font-size: 1.385vw;
+  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */

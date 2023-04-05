@@ -665,7 +665,7 @@ p {
     gap: 2.5vw;
 
     padding-top: 2vw;
-    
+
     font-size: 2vw;
 
     .see-more {
@@ -675,6 +675,7 @@ p {
       border-radius: 6.66vw;
       cursor: pointer;
     }
+
     .try-red {
       color: var(--red);
       padding: 1vw 3vw;
@@ -685,10 +686,7 @@ p {
   }
 }
 
-.section-6 {
-
-
-}
+.section-6 {}
 
 .section-7 {
   color: white;
@@ -706,6 +704,7 @@ p {
 
   .section-7__text-container-top {
     padding-bottom: 5vw;
+
     p {
       font-size: 1.89vw;
     }
@@ -715,13 +714,16 @@ p {
     padding-bottom: 5vw;
     display: flex;
     justify-content: flex-end;
+
     p {
-      
+
       font-size: 1.89vw;
     }
   }
+
   .section-7__text-container-bottom {
     padding-bottom: 5vw;
+
     p {
       font-size: 1.89vw;
 
@@ -731,12 +733,12 @@ p {
   .section-7__button-container {
     display: flex;
     justify-content: center;
-   
+
     .try-white {
       color: white;
       padding: 1vw 3vw;
       background-color: transparent;
-      border-radius: 6.66vw;  
+      border-radius: 6.66vw;
       border: 0.16vw solid white;
       cursor: pointer;
       font-size: 2vw;
@@ -759,9 +761,10 @@ p {
 
   .sandler-container {
     padding-bottom: 2vw;
+
     img {
       // display: block;
-    
+
       max-height: 8.75vw;
       // object-fit: fill;
     }
@@ -788,30 +791,31 @@ p {
   }
 
   .icon-container {
-    // padding-top: 1vw;
     padding-bottom: 1vw;
-    display: flex;
     gap: 1vw;
-    
+    display: flex;
+
     .whatsapp {
       box-shadow: initial;
     }
-  
+
     .telegram {
       box-shadow: initial;
     }
-  
+
     .tiktok {
       box-shadow: initial;
     }
   }
-  .callback-footer {
+
+  .callback-contacts {
     font-size: 1.25vw;
     font-weight: 300;
   }
 }
 
 .whatsapp {
+  display: block;
   width: 4.16vw;
   height: 4.16vw;
   border-radius: 6.66vw;
@@ -824,6 +828,7 @@ p {
 }
 
 .telegram {
+  display: block;
   width: 4.16vw;
   height: 4.16vw;
   border-radius: 6.66vw;
@@ -836,6 +841,7 @@ p {
 }
 
 .tiktok {
+  display: block;
   width: 4.16vw;
   height: 4.16vw;
   border-radius: 6.66vw;
@@ -845,6 +851,11 @@ p {
   background-repeat: no-repeat;
   cursor: pointer;
   box-shadow: 0 0 1.66vw var(--red);
+
+  a {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .callback {
@@ -864,31 +875,131 @@ p {
   height: 29.75vw;
   background-color: var(--red);
   padding: 5.33vw 7.5vw;
-  .footer__menu {
-    height: 100%;
-    width: 45vw;
+
+  .footer__top-line {
+    width: 100%;
+    height: 50%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 2vw;
 
-    .footer__list {
+    img {
+      width: 23vw;
+    }
+
+    .footer__menu {
+      height: 100%;
+      width: 21.1vw;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 2vw;
 
-      list-style-type: none;
 
-      .footer__item {
+      .footer__list {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        max-height: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1vw;
 
-        a {
-          font-size: 1.8vw;
-          color: white;
+        list-style-type: none;
 
-          text-decoration: none;
+        .footer__item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 2vw;
+
+          a {
+            font-size: 1.8vw;
+            color: white;
+
+            text-decoration: none;
+          }
         }
+      }
+    }
+
+    .footer__icons-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+
+      .icon-container {
+        width: 100%;
+        padding-bottom: 1vw;
+        gap: 1vw;
+        display: flex;
+
+        .whatsapp {
+          width: 6.25vw;
+          height: 6.25vw;
+          background-size: 7.5vw 7.5vw;
+          background-position: center center;
+          box-shadow: initial;
+          border: .16vw solid white;
+        }
+
+        .telegram {
+          width: 6.25vw;
+          height: 6.25vw;
+          background-size: 7.5vw 7.5vw;
+          background-position: center center;
+          box-shadow: initial;
+          border: .16vw solid white;
+        }
+
+        .tiktok {
+          width: 6.25vw;
+          height: 6.25vw;
+          background-size: 7.5vw 7.5vw;
+          background-position: center center;
+          box-shadow: initial;
+          border: .16vw solid white;
+        }
+      }
+
+    }
+
+    .callback-footer {
+      font-size: 2vw;
+      font-weight: 300;
+    }
+
+  }
+
+  .footer__bottom-line {
+    padding-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-size: 1.5vw;
+      color: white;
+    }
+
+    .footer__contacts-container {
+      padding-top: 2vw;
+      display: flex;
+      // justify-content: center;
+      align-items: flex-end;
+      flex-direction: column;
+      
+  
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 2.83vw;
+      }
+
+      address {
+        color: white;
+        font-style: normal;
+        font-size: 1.385vw;
+        font-weight: 300;
       }
     }
   }

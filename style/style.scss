@@ -603,26 +603,6 @@ p {
   }
 }
 
-// .swiper {
-//   width: 100vw;
-//   height: 33.66vw;
-//   background-color: red;
-//   display: flex;
-//   gap: 20px;
-// }
-
-// .swiper-slide {
-//   border-radius: 80px;
-//   height: 100%;
-// }
-
-// .swiper-slide img {
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }
-
 .section-5 {
   padding: 6.66vw 7.33vw 6.8vw 7.66vw;
   background-image: url('../assets/kids.png'), url('../assets/background/red-bg.jpg');
@@ -763,7 +743,7 @@ p {
     width: 30vw;
     padding-bottom: 2vw;
     display: flex;
-    
+
 
     img {
       display: block;
@@ -989,8 +969,8 @@ p {
       // justify-content: center;
       align-items: flex-end;
       flex-direction: column;
-      
-  
+
+
       a {
         text-decoration: none;
         color: white;
@@ -1005,4 +985,99 @@ p {
       }
     }
   }
+}
+
+
+
+.our-teachers {
+  padding: 5.33vw 7.5vw;
+
+  
+  .swiper {
+    width: 85.83vw;
+    height: 100%;
+    gap: 0px;
+
+    .swiper-button-next {
+      width: 2vw;
+      color: var(--red);
+
+    }
+
+    .swiper-button-prev {
+      width: 2vw;
+      color: var(--red);
+    }
+  }
+
+  .swiper-slide {
+    width: 22.5vw;
+    height: 40vw;
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    .img-wrapper {
+      display: flex;
+      width: 22.5vw;
+      height: 25.4vw;
+      object-fit: cover;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        border-radius: 3vw;
+        object-fit: fill;
+
+      }
+    }
+
+    p {
+      font-family: 'Bicubik';
+      font-size: 2vw;
+    }
+
+    .lesson-type {
+      width: 3.6vw;
+      height: 3.6vw;
+    }
+  }
+}
+
+.vocal {
+  background-image: url('../assets/type-vocal.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.guitar {
+  background-image: url('../assets/type-guitar.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+.keys {
+  background-image: url('../assets/type-keys.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+.drums {
+  background-image: url('../assets/type-drums.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
 }

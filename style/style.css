@@ -813,4 +813,87 @@ p {
   font-style: normal;
   font-size: 1.385vw;
   font-weight: 300;
+}
+
+.our-teachers {
+  padding: 5.33vw 7.5vw;
+}
+.our-teachers .swiper {
+  width: 85.83vw;
+  height: 100%;
+  gap: 0px;
+}
+.our-teachers .swiper .swiper-button-next {
+  width: 2vw;
+  color: var(--red);
+}
+.our-teachers .swiper .swiper-button-prev {
+  width: 2vw;
+  color: var(--red);
+}
+.our-teachers .swiper-slide {
+  width: 22.5vw;
+  height: 40vw;
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.our-teachers .swiper-slide .img-wrapper {
+  display: flex;
+  width: 22.5vw;
+  height: 25.4vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.our-teachers .swiper-slide .img-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  border-radius: 3vw;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.our-teachers .swiper-slide p {
+  font-family: "Bicubik";
+  font-size: 2vw;
+}
+.our-teachers .swiper-slide .lesson-type {
+  width: 3.6vw;
+  height: 3.6vw;
+}
+
+.vocal {
+  background-image: url("../assets/type-vocal.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.guitar {
+  background-image: url("../assets/type-guitar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.keys {
+  background-image: url("../assets/type-keys.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.drums {
+  background-image: url("../assets/type-drums.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }/*# sourceMappingURL=style.css.map */

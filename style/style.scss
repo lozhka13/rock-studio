@@ -719,12 +719,71 @@ p {
       border-radius: 6.66vw;
       cursor: pointer;
     }
-    .try {
+    .try-red {
       color: var(--red);
       padding: 1vw 3vw;
       background-color: white;
       border-radius: 6.66vw;
       cursor: pointer;
+    }
+  }
+}
+
+.section-6 {
+
+
+}
+
+.section-7 {
+  color: white;
+  padding: 6.58vw 4vw 5.33vw 7.66vw;
+  background-color: black;
+  background-image: url('../assets/dance-hall.png'), url('../assets/dance-hall.png'), url('../assets/background/red-bg.jpg');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 37.5vw 27.1vw, 37.5vw 27.1vw, cover;
+  background-position: 100% 29.5%, 0% 68%, center center;
+
+
+  h1 {
+    padding-bottom: 5vw;
+  }
+
+  .section-7__text-container-top {
+    padding-bottom: 5vw;
+    p {
+      font-size: 1.89vw;
+    }
+  }
+
+  .section-7__text-container-middle {
+    padding-bottom: 5vw;
+    display: flex;
+    justify-content: flex-end;
+    p {
+      
+      font-size: 1.89vw;
+    }
+  }
+  .section-7__text-container-bottom {
+    padding-bottom: 5vw;
+    p {
+      font-size: 1.89vw;
+
+    }
+  }
+
+  .section-7__button-container {
+    display: flex;
+    justify-content: center;
+   
+    .try-white {
+      color: white;
+      padding: 1vw 3vw;
+      background-color: transparent;
+      border-radius: 6.66vw;  
+      border: 0.16vw solid white;
+      cursor: pointer;
+      font-size: 2vw;
     }
   }
 }

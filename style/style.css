@@ -613,9 +613,13 @@ p {
   padding-bottom: 2vw;
 }
 .section-8 .sandler-container {
+  width: 30vw;
   padding-bottom: 2vw;
+  display: flex;
 }
 .section-8 .sandler-container img {
+  display: block;
+  max-width: 100%;
   max-height: 8.75vw;
 }
 .section-8 .section-8__number a {

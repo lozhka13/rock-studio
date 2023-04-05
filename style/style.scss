@@ -748,8 +748,8 @@ p {
   padding: 6.83vw 0 8.16vw 7.66vw;
   // width: 32.66vw;
   background-image: url('../assets/map.png'), url('../assets/background/white-bg.jpg');
-  background-size: 52.66vw 37.66vw, cover;
-  background-position: 100% 40%, center center;
+  background-size: 52.66vw 35vw, cover;
+  background-position: 100% 60%, center center;
   background-repeat: no-repeat;
 
   .mina {
@@ -757,11 +757,14 @@ p {
     padding-bottom: 2vw;
   }
 
-  img {
-    display: block;
-    max-width: 100%;
-    height: 100px;
-    object-fit: contain;
+  .sandler-container {
+    padding-bottom: 2vw;
+    img {
+      // display: block;
+    
+      max-height: 8.75vw;
+      // object-fit: fill;
+    }
   }
 
   .section-8__number {
@@ -855,4 +858,38 @@ p {
   color: white;
   background-color: black;
   font-size: 1vw;
+}
+
+.footer {
+  height: 29.75vw;
+  background-color: var(--red);
+  padding: 5.33vw 7.5vw;
+  .footer__menu {
+    height: 100%;
+    width: 45vw;
+    display: flex;
+    align-items: center;
+
+    .footer__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2vw;
+
+      list-style-type: none;
+
+      .footer__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          font-size: 1.8vw;
+          color: white;
+
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }

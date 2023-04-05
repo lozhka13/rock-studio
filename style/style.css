@@ -537,4 +537,57 @@ p {
   font-size: 2vw;
   font-weight: 300;
   cursor: pointer;
+}
+
+.section-5 {
+  padding: 6.66vw 7.33vw 6.8vw 7.66vw;
+  background-image: url("../assets/kids.png"), url("../assets/background/red-bg.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 32vw 29.83vw, cover;
+  background-position: 0% 50%, center center;
+  color: white;
+}
+.section-5 h1 {
+  padding-bottom: 2vw;
+}
+.section-5 .h1-quote {
+  font-family: "Bicubik";
+  font-size: 5vw;
+  padding-bottom: 1vw;
+}
+.section-5 .section-5__content {
+  padding-left: 28vw;
+  padding-bottom: 3vw;
+}
+.section-5 .section-5__content p {
+  font-size: 1.5vw;
+  line-height: 2vw;
+}
+.section-5 .section-5__content .maria {
+  padding-top: 4.66vw;
+  font-size: 2vw;
+  font-family: "Bicubik";
+  line-height: 2.5vw;
+}
+.section-5 .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2.5vw;
+  padding-top: 2vw;
+  font-size: 2vw;
+}
+.section-5 .button-container .see-more {
+  color: white;
+  padding: 1vw 3vw;
+  border: 0.16vw solid white;
+  border-radius: 6.66vw;
+  cursor: pointer;
+}
+.section-5 .button-container .try {
+  color: var(--red);
+  padding: 1vw 3vw;
+  background-color: white;
+  border-radius: 6.66vw;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

@@ -92,7 +92,6 @@ p {
 
         img {
           width: 14vw;
-          height: 100%;
           display: flex;
         }
       }
@@ -100,7 +99,7 @@ p {
 
     .header__menu {
       height: 100%;
-      width: 50vw;
+      width: 45vw;
       display: flex;
       align-items: center;
 
@@ -128,30 +127,11 @@ p {
     }
 
     .contacts-container {
-      width: 28vw;
+      width: 33vw;
       height: 100%;
       display: flex;
       align-items: center;
       gap: 2.5vw;
-
-      .callback {
-        width: 13vw;
-        height: 2.5vw;
-
-        cursor: pointer;
-
-        border: none;
-        border-radius: 6.66vw;
-        padding: 0 0.5vw;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        color: white;
-        background-color: black;
-        font-size: 1vw;
-      }
 
       .contacts {
         width: 13.5vw;
@@ -202,30 +182,6 @@ p {
       padding-top: 2.5vw;
       display: flex;
       gap: 1.25vw;
-
-      .whatsapp {
-        width: 4.16vw;
-        height: 4.16vw;
-        border-radius: 6.66vw;
-        background-image: url('../assets/icons/whatsapp.png');
-        background-size: cover;
-        background-color: var(--red);
-        background-repeat: no-repeat;
-        cursor: pointer;
-        box-shadow: 0 0 1.66vw var(--red);
-      }
-
-      .telegram {
-        width: 4.16vw;
-        height: 4.16vw;
-        border-radius: 6.66vw;
-        background-image: url('../assets/icons/telegram.png');
-        background-size: cover;
-        background-color: var(--red);
-        background-repeat: no-repeat;
-        cursor: pointer;
-        box-shadow: 0 0 1.66vw var(--red);
-      }
 
       .try-lesson {
         width: 28.5vw;
@@ -786,4 +742,117 @@ p {
       font-size: 2vw;
     }
   }
+}
+
+.section-8 {
+  padding: 6.83vw 0 8.16vw 7.66vw;
+  // width: 32.66vw;
+  background-image: url('../assets/map.png'), url('../assets/background/white-bg.jpg');
+  background-size: 52.66vw 37.66vw, cover;
+  background-position: 100% 40%, center center;
+  background-repeat: no-repeat;
+
+  .mina {
+    font-size: 1.5vw;
+    padding-bottom: 2vw;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .section-8__number {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 2.83vw;
+    }
+  }
+
+  address {
+    color: black;
+    font-style: normal;
+    font-size: 1.385vw;
+    font-weight: 300;
+    padding-bottom: 2vw;
+  }
+
+  .icon-container {
+    // padding-top: 1vw;
+    padding-bottom: 1vw;
+    display: flex;
+    gap: 1vw;
+    
+    .whatsapp {
+      box-shadow: initial;
+    }
+  
+    .telegram {
+      box-shadow: initial;
+    }
+  
+    .tiktok {
+      box-shadow: initial;
+    }
+  }
+  .callback-footer {
+    font-size: 1.25vw;
+    font-weight: 300;
+  }
+}
+
+.whatsapp {
+  width: 4.16vw;
+  height: 4.16vw;
+  border-radius: 6.66vw;
+  background-image: url('../assets/icons/whatsapp.png');
+  background-size: cover;
+  background-color: var(--red);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-shadow: 0 0 1.66vw var(--red);
+}
+
+.telegram {
+  width: 4.16vw;
+  height: 4.16vw;
+  border-radius: 6.66vw;
+  background-image: url('../assets/icons/telegram.png');
+  background-size: cover;
+  background-color: var(--red);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-shadow: 0 0 1.66vw var(--red);
+}
+
+.tiktok {
+  width: 4.16vw;
+  height: 4.16vw;
+  border-radius: 6.66vw;
+  background-image: url('../assets/icons/tiktok.png');
+  background-size: cover;
+  background-color: var(--red);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-shadow: 0 0 1.66vw var(--red);
+}
+
+.callback {
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 6.66vw;
+  padding: 0.75vw 1.33vw;
+
+  color: white;
+  background-color: black;
+  font-size: 1vw;
 }

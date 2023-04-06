@@ -971,11 +971,12 @@ p {
   gap: 1.5vw;
 }
 .section-2 .section-2__content .section-2__cards .card {
-  height: 14vw;
+  height: 13vw;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .section-2 .section-2__content .section-2__cards .card .img-container {
   width: 100%;
@@ -994,10 +995,13 @@ p {
   gap: 1vw;
 }
 .section-2 .section-2__content .section-2__cards .card .card-container h2 {
+  max-width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.9vw;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 1.8vw;
 }
 .section-2 .section-2__content .section-2__cards .card .card-container .more {
   font-size: 1.25vw;

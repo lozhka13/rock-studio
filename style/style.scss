@@ -6,6 +6,10 @@
   src: url('../assets/fonts/Bicubik/Bicubik.OTF');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --red: #A30000;
 }

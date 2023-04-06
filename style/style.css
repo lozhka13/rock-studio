@@ -784,83 +784,55 @@ p {
   padding: 1.5vw 3.5vw;
 }
 .section-1 .header .header-container {
-  width: 100%;
+  display: grid;
   height: 8vw;
   padding: 0 3vw;
   border-radius: 6.66vw;
   background-color: var(--red);
-  box-shadow: 0px 0px 2vw var(--red);
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   gap: 2.5vw;
 }
-.section-1 .header .header-container .logo-container {
+.section-1 .header .header-container .header__logo-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100%;
 }
-.section-1 .header .header-container .logo-container img {
+.section-1 .header .header-container .header__logo-container img {
   width: 14vw;
-  display: flex;
 }
 .section-1 .header .header__menu {
-  height: 100%;
-  width: 45vw;
-  display: flex;
-  align-items: center;
+  display: grid;
 }
 .section-1 .header .header__menu .header__list {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
+  grid-template-columns: repeat(5, auto);
   gap: 2vw;
   list-style-type: none;
 }
 .section-1 .header .header__menu .header__list .header__item {
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: center;
 }
 .section-1 .header .header__menu .header__list .header__item a {
   font-size: 1.8vw;
   color: white;
 }
 .section-1 .header .contacts-container {
-  width: 33vw;
-  height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 2.5vw;
-}
-.section-1 .header .contacts-container .contacts {
-  width: 13.5vw;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.section-1 .header .contacts-container .contacts .number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section-1 .header .contacts-container .contacts .number a {
-  color: white;
-  font-size: 1.5vw;
-}
-.section-1 .header .contacts-container .contacts address {
-  color: white;
-  font-style: normal;
-  font-size: 0.75vw;
+  gap: 1.5vw;
 }
 .section-1 .section-1__content {
-  padding: 4.25vw 0px 0px 7.66vw;
+  padding: 5.33vw 7.5vw;
   height: 44vw;
   color: white;
   background-image: url("../assets/red-line.png");
-  background-position: 5.83vw 9.16vw;
-  background-size: 55vw;
+  background-position: 6.5vw 10.5vw;
+  background-size: 53vw;
   background-repeat: no-repeat;
 }
 .section-1 .section-1__content .section-1__content__text-container {
@@ -875,35 +847,8 @@ p {
   gap: 1.25vw;
 }
 .section-1 .section-1__content .section-1__content__button-container .icon-container {
-  padding-bottom: 1vw;
   gap: 1vw;
   display: flex;
-}
-.section-1 .section-1__content .section-1__content__button-container .icon-container .whatsapp {
-  width: 4.16vw;
-  height: 4.16vw;
-  background-size: 5vw 5vw;
-  background-position: center center;
-  box-shadow: 0 0 10px var(--red);
-}
-.section-1 .section-1__content .section-1__content__button-container .icon-container .telegram {
-  width: 4.16vw;
-  height: 4.16vw;
-  background-size: 5vw 5vw;
-  background-position: center center;
-  box-shadow: 0 0 10px var(--red);
-}
-.section-1 .section-1__content .section-1__content__button-container .try-lesson {
-  width: 28.5vw;
-  height: 4.16vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--red);
-  border-radius: 6.66vw;
-  box-shadow: 0 0 1.66vw var(--red);
-  font-size: 2.33vw;
-  cursor: pointer;
 }
 
 .our-courses {
@@ -1288,15 +1233,6 @@ p {
   gap: 1vw;
   display: flex;
 }
-.section-8 .icon-container .whatsapp {
-  box-shadow: initial;
-}
-.section-8 .icon-container .telegram {
-  box-shadow: initial;
-}
-.section-8 .icon-container .tiktok {
-  box-shadow: initial;
-}
 .section-8 .yandex-map {
   width: 100%;
   height: 100%;
@@ -1306,49 +1242,6 @@ p {
 }
 .section-8 .yandex-map iframe {
   border: none;
-}
-
-.whatsapp {
-  display: block;
-  width: 4.16vw;
-  height: 4.16vw;
-  border-radius: 6.66vw;
-  background-image: url("../assets/icons/whatsapp.png");
-  background-size: cover;
-  background-color: var(--red);
-  background-repeat: no-repeat;
-  cursor: pointer;
-  box-shadow: 0 0 1.66vw var(--red);
-}
-
-.telegram {
-  display: block;
-  width: 4.16vw;
-  height: 4.16vw;
-  border-radius: 6.66vw;
-  background-image: url("../assets/icons/telegram.png");
-  background-size: cover;
-  background-color: var(--red);
-  background-repeat: no-repeat;
-  cursor: pointer;
-  box-shadow: 0 0 1.66vw var(--red);
-}
-
-.tiktok {
-  display: block;
-  width: 4.16vw;
-  height: 4.16vw;
-  border-radius: 6.66vw;
-  background-image: url("../assets/icons/tiktok.png");
-  background-size: cover;
-  background-color: var(--red);
-  background-repeat: no-repeat;
-  cursor: pointer;
-  box-shadow: 0 0 1.66vw var(--red);
-}
-.tiktok a {
-  width: 100%;
-  height: 100%;
 }
 
 .callback {
@@ -1362,110 +1255,53 @@ p {
 }
 
 .footer {
-  height: 29.75vw;
   background-color: var(--red);
-  padding: 5.33vw 7.5vw;
 }
-.footer .footer__top-line {
-  width: 100%;
-  height: 50%;
-  display: flex;
+.footer .footer-container {
+  display: grid;
+  grid-template-areas: "a b c" "d d e";
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto;
   justify-content: space-between;
-  align-items: center;
-  gap: 2vw;
+  gap: 1.5vw;
 }
-.footer .footer__top-line img {
+.footer .footer-container img {
   width: 23vw;
 }
-.footer .footer__top-line .footer__menu {
-  height: 100%;
-  width: 21.1vw;
-  display: flex;
-}
-.footer .footer__top-line .footer__menu .footer__list {
-  display: flex;
-  max-height: 100%;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 1vw;
+.footer .footer-container .footer__menu .footer__list {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "a d" "b e" "c";
+  gap: 1.5vw;
   list-style-type: none;
 }
-.footer .footer__top-line .footer__menu .footer__list .footer__item {
+.footer .footer-container .footer__menu .footer__list .footer__item {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 2vw;
 }
-.footer .footer__top-line .footer__menu .footer__list .footer__item a {
-  font-size: 1.8vw;
+.footer .footer-container .footer__menu .footer__list .footer__item a {
+  font-size: 2vw;
   color: white;
 }
-.footer .footer__top-line .footer__icons-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.footer .footer-container .footer__icons-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "a" "b";
+  gap: 1vw;
 }
-.footer .footer__top-line .footer__icons-container .icon-container {
-  width: 100%;
-  padding-bottom: 1vw;
+.footer .footer-container .footer__icons-container .icon-container {
   gap: 1vw;
   display: flex;
+  justify-content: center;
 }
-.footer .footer__top-line .footer__icons-container .icon-container .whatsapp {
-  width: 6.25vw;
-  height: 6.25vw;
-  background-size: 7.5vw 7.5vw;
-  background-position: center center;
-  box-shadow: initial;
-  border: 0.16vw solid white;
-}
-.footer .footer__top-line .footer__icons-container .icon-container .telegram {
-  width: 6.25vw;
-  height: 6.25vw;
-  background-size: 7.5vw 7.5vw;
-  background-position: center center;
-  box-shadow: initial;
-  border: 0.16vw solid white;
-}
-.footer .footer__top-line .footer__icons-container .icon-container .tiktok {
-  width: 6.25vw;
-  height: 6.25vw;
-  background-size: 7.5vw 7.5vw;
-  background-position: center center;
-  box-shadow: initial;
-  border: 0.16vw solid white;
-}
-.footer .footer__top-line .callback-footer {
-  font-size: 2vw;
-  font-weight: 300;
-}
-.footer .footer__bottom-line {
-  padding-top: 1vw;
-  display: flex;
-  justify-content: space-between;
-}
-.footer .footer__bottom-line p {
+.footer .footer-container p {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
   font-size: 1.5vw;
   color: white;
-}
-.footer .footer__bottom-line .footer__contacts-container {
-  padding-top: 2vw;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-}
-.footer .footer__bottom-line .footer__contacts-container a {
-  color: white;
-  font-size: 2.7vw;
-}
-.footer .footer__bottom-line .footer__contacts-container address {
-  color: white;
-  font-style: normal;
-  font-size: 1.385vw;
-  font-weight: 300;
 }
 
 .our-teachers {
@@ -1622,11 +1458,74 @@ p {
 .black-button a:link,
 .black-button a:visited {
   color: white;
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-weight: 300;
 }
 
-.font-1vw a:link,
-.font-1vw a:visited {
+.whatsapp {
+  display: block;
+  width: 4.16vw;
+  height: 4.16vw;
+  background-size: 5vw 5vw;
+  border-radius: 6.66vw;
+  background-image: url("../assets/icons/whatsapp.png");
+  background-size: cover;
+  background-position: center center;
+  background-color: var(--red);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.telegram {
+  display: block;
+  width: 4.16vw;
+  height: 4.16vw;
+  border-radius: 6.66vw;
+  background-image: url("../assets/icons/telegram.png");
+  background-size: cover;
+  background-color: var(--red);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.white-border {
+  border: 0.16vw solid white;
+}
+
+.header__contacts .number {
+  display: flex;
+  justify-content: center;
+}
+.header__contacts .number a {
+  color: white;
+  font-size: 1.5vw;
+}
+.header__contacts address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-style: normal;
+  font-size: 0.75vw;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer__contacts .number {
+  display: flex;
+  justify-content: center;
+}
+.footer__contacts .number a {
+  color: white;
+  font-size: 2vw;
+}
+.footer__contacts address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-style: normal;
   font-size: 1vw;
 }/*# sourceMappingURL=style.css.map */

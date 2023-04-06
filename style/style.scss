@@ -988,8 +988,10 @@ p {
           }
 
           .more {
-            width: 10vw;
-            height: 2.16vw;
+            // width: 10vw;
+            // height: 2.16vw;
+
+            padding: 0.5vw 1vw;
 
             border-radius: 6.66vw;
             background-color: var(--red);
@@ -1621,11 +1623,22 @@ p {
   justify-content: center;
   align-items: center;
 
+  transition: .5s;
+
   a:link,
   a:visited {
     color: var(--red);
     font-size: 1.5vw;
     font-weight: 300;
+  }
+
+  &:hover {
+    background-color: var(--red);
+
+    a:link,
+    a:visited {
+      color: white;
+    }
   }
 }
 
@@ -1633,17 +1646,30 @@ p {
   padding: 0.75vw 1.6875vw;
 
   background-color: var(--red);
+  border: .16vw solid var(--red);
   border-radius: 6.66vw;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
+  transition: .5s;
+
   a:link,
   a:visited {
     color: white;
     font-size: 1.5vw;
     font-weight: 300;
+  }
+
+  &:hover {
+    background-color: white;
+    border: .16vw solid var(--red);
+
+    a:link,
+    a:visited {
+      color: var(--red);
+    }
   }
 }
 

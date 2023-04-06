@@ -5,10 +5,6 @@
   font-family: "Bicubik";
   src: url("../assets/fonts/Bicubik/Bicubik.OTF");
 }
-html {
-  scroll-behavior: smooth;
-}
-
 :root {
   --red: #A30000;
 }
@@ -159,6 +155,25 @@ p {
   padding-top: 2.5vw;
   display: flex;
   gap: 1.25vw;
+}
+.section-1 .section-1__content .section-1__content__button-container .icon-container {
+  padding-bottom: 1vw;
+  gap: 1vw;
+  display: flex;
+}
+.section-1 .section-1__content .section-1__content__button-container .icon-container .whatsapp {
+  width: 4.16vw;
+  height: 4.16vw;
+  background-size: 5vw 5vw;
+  background-position: center center;
+  box-shadow: 0 0 10px var(--red);
+}
+.section-1 .section-1__content .section-1__content__button-container .icon-container .telegram {
+  width: 4.16vw;
+  height: 4.16vw;
+  background-size: 5vw 5vw;
+  background-position: center center;
+  box-shadow: 0 0 10px var(--red);
 }
 .section-1 .section-1__content .section-1__content__button-container .try-lesson {
   width: 28.5vw;
@@ -823,28 +838,15 @@ p {
   padding: 5.33vw 7.5vw;
 }
 .our-teachers .swiper {
-  width: 85.83vw;
+  width: 100%;
   height: 100%;
 }
-.our-teachers .swiper .swiper-button-next {
-  width: 2vw;
-  color: var(--red);
-}
-.our-teachers .swiper .swiper-button-prev {
-  width: 2vw;
-  color: var(--red);
-}
 .our-teachers .swiper-slide {
-  width: 100%;
   height: 40vw;
-  text-align: center;
-  font-size: 18px;
-  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow: hidden;
 }
 .our-teachers .swiper-slide .img-wrapper {
   display: flex;
@@ -868,7 +870,11 @@ p {
   width: 3.6vw;
   height: 3.6vw;
 }
+.our-teachers .swiper-slide .swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--red);
+}
 .our-teachers .reviews__button-container {
+  padding-top: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;

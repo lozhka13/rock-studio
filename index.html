@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"> -->
   <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <title>Sandler Rock School</title>
 </head>
 
@@ -69,44 +70,89 @@
       </nav>
       <div class="section-2__content">
         <div class="section-2__cards">
-          <div class="acoustic-guitar">
+
+          <div class="card" data-instrument="guitar">
+            <div class="img-container">
+              <img src="./assets/acoustic-guitar.png" alt="">
+            </div>
             <div class="card-container">
               <h2>Акустическая гитара</h2>
               <div class="more">Подробнее</div>
             </div>
           </div>
-          <div class="electric-guitar">
+          
+          <div class="card" data-instrument="guitar">
+            <div class="img-container">
+              <img src="./assets/electric-guitar.png" alt="">
+            </div>
             <div class="card-container">
-              <h2>Акустическая гитара</h2>
+              <h2>Электрогитара</h2>
               <div class="more">Подробнее</div>
             </div>
           </div>
-          <div class="bass-guitar">
+
+          <div class="card" data-instrument="guitar">
+            <div class="img-container">
+              <img src="./assets/bass-guitar.png" alt="">
+            </div>
             <div class="card-container">
-              <h2>Акустическая гитара</h2>
+              <h2>Бас гитара</h2>
               <div class="more">Подробнее</div>
             </div>
           </div>
-          <div class="pop-vocal">
+
+          <div class="card" data-instrument="vocal">
+            <div class="img-container">
+              <img src="./assets/pop-vocal.png" alt="">
+            </div>
             <div class="card-container">
-              <h2>Акустическая гитара</h2>
+              <h2>Эстрадный вокал</h2>
               <div class="more">Подробнее</div>
             </div>
           </div>
-          <div class="folk-vocal">
+
+          <div class="card" data-instrument="vocal">
+            <div class="img-container">
+              <img src="./assets/folk-vocal.png" alt="">
+            </div>
             <div class="card-container">
-              <h2>Акустическая гитара</h2>
+              <h2>Народный вокал</h2>
               <div class="button-container">
                 <div class="more">Подробнее</div>
               </div>
             </div>
           </div>
-          <div class="academic-vocal">
+
+          <div class="card" data-instrument="vocal">
+            <div class="img-container">
+              <img src="./assets/academic-vocal.png" alt="">
+            </div>
             <div class="card-container">
-              <h2>Акустическая гитара</h2>
+              <h2>Академический вокал</h2>
               <div class="more">Подробнее</div>
             </div>
           </div>
+
+          <div class="card" data-instrument="drums">
+            <div class="img-container">
+              <img src="./assets/drums.png" alt="">
+            </div>
+            <div class="card-container">
+              <h2>Ударные</h2>
+              <div class="more">Подробнее</div>
+            </div>
+          </div>
+
+          <div class="card" data-instrument="keys">
+            <div class="img-container">
+              <img src="./assets/keys.png" alt="">
+            </div>
+            <div class="card-container">
+              <h2>Клавишные</h2>
+              <div class="more">Подробнее</div>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="buttons-container">
@@ -333,7 +379,7 @@
     <h1>Контакты</h1>
     <p class="mina">Мы всегда на связи!</p>
     <div class="sandler-container">
-      <img src="./assets/logo/full-logo-red.svg" alt="">
+      <a href="/"><img src="./assets/logo/full-logo-red.svg" alt=""></a>
     </div>
 
     <p>Режим работы:</p>
@@ -349,7 +395,7 @@
   </section>
   <footer class="footer">
     <div class="footer__top-line">
-      <img src="./assets/logo/full-logo-white.svg" alt="">
+      <a href="/"><img src="./assets/logo/full-logo-white.svg" alt=""></a>
 
       <nav class="footer__menu">
         <ul class="footer__list">
@@ -384,8 +430,6 @@
       </div>
     </div>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./index.js"></script>
 </body>
 

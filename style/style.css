@@ -236,7 +236,6 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
   }
 }
 .swiper-virtual .swiper-slide {
-  -webkit-backface-visibility: hidden;
   transform: translateZ(0);
 }
 
@@ -525,7 +524,6 @@ button.swiper-pagination-bullet {
 .swiper-scrollbar {
   border-radius: var(--swiper-scrollbar-border-radius, 10px);
   position: relative;
-  -ms-touch-action: none;
   background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, 0.1));
 }
 
@@ -953,8 +951,10 @@ p {
   border: 0.16vw solid var(--red);
   border-radius: 6.66vw;
   font-size: 2vw;
+  background-color: white;
   color: var(--red);
   cursor: pointer;
+  transition: 0.4s;
 }
 .section-2 .section-2__menu .section-2__list .selected {
   background-color: var(--red);
@@ -967,86 +967,49 @@ p {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 1.5vw;
 }
-.section-2 .section-2__content .section-2__cards .acoustic-guitar {
-  min-width: 27vw;
+.section-2 .section-2__content .section-2__cards .card {
   height: 14vw;
-  border-radius: 2vw;
-  border: 0.16vw solid var(--red);
-  background: url("../assets/acoustic-guitar.png");
-  background-color: red;
-  background-size: 100%;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
-.section-2 .section-2__content .section-2__cards .electric-guitar {
-  min-width: 27vw;
-  height: 14vw;
-  border-radius: 2vw;
-  border: 0.16vw solid var(--red);
-  background: url("../assets/acoustic-guitar.png");
-  background-color: red;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  position: relative;
+.section-2 .section-2__content .section-2__cards .card .img-container {
+  width: 100%;
+  height: 100%;
 }
-.section-2 .section-2__content .section-2__cards .bass-guitar {
-  min-width: 27vw;
-  height: 14vw;
-  border-radius: 2vw;
-  border: 0.16vw solid var(--red);
-  background: url("../assets/acoustic-guitar.png");
-  background-color: red;
-  background-size: 100%;
-  background-repeat: no-repeat;
+.section-2 .section-2__content .section-2__cards .card .card-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
-  position: relative;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
 }
-.section-2 .section-2__content .section-2__cards .pop-vocal {
-  min-width: 27vw;
-  height: 14vw;
-  border-radius: 2vw;
-  border: 0.16vw solid var(--red);
-  background: url("../assets/acoustic-guitar.png");
-  background-color: red;
-  background-size: 100%;
-  background-repeat: no-repeat;
+.section-2 .section-2__content .section-2__cards .card .card-container h2 {
   display: flex;
   justify-content: center;
-  position: relative;
+  align-items: center;
+  font-size: 1.9vw;
 }
-.section-2 .section-2__content .section-2__cards .folk-vocal {
-  min-width: 27vw;
-  height: 14vw;
-  border-radius: 2vw;
-  border: 0.16vw solid var(--red);
-  background: url("../assets/acoustic-guitar.png");
-  background-color: red;
-  background-size: 100%;
-  background-repeat: no-repeat;
+.section-2 .section-2__content .section-2__cards .card .card-container .more {
+  font-size: 1.25vw;
+  width: 10vw;
+  height: 2.16vw;
+  color: white;
+  background-color: var(--red);
   display: flex;
   justify-content: center;
-  position: relative;
-}
-.section-2 .section-2__content .section-2__cards .academic-vocal {
-  min-width: 27vw;
-  height: 14vw;
-  border-radius: 2vw;
-  border: 0.16vw solid var(--red);
-  background: url("../assets/acoustic-guitar.png");
-  background-color: red;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  position: relative;
+  align-items: center;
+  border-radius: 6.66vw;
+  font-weight: 300;
 }
 
 .buttons-container {
@@ -1087,39 +1050,6 @@ p {
   text-decoration: none;
   color: white;
   font-size: 2vw;
-  font-weight: 300;
-}
-
-.card-container {
-  width: 100%;
-  height: 100%;
-  padding: 1vw 3.5vw 0;
-  border-radius: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 1vw;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.card-container div {
-  display: flex;
-  justify-content: center;
-}
-.card-container .more {
-  font-size: 1.25vw;
-  width: 10vw;
-  height: 2.16vw;
-  color: white;
-  background-color: var(--red);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 6.66vw;
   font-weight: 300;
 }
 

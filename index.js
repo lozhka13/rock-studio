@@ -3,7 +3,7 @@
 
 const allCards = document.querySelectorAll('.card');
 
-const allFilters = document.querySelector('.section-2__list');
+const allFilters = document.querySelector('.our-courses__list');
 const allButtonFilter = allFilters.children[0];
 const vocalButtonFilter = allFilters.children[1];
 const guitarButtonFilter = allFilters.children[2];

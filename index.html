@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"> -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <title>Sandler Rock School</title>
 </head>
@@ -29,7 +29,7 @@
           </ul>
         </nav>
         <div class="contacts-container">
-          <button class="callback"><a href="/#take-a-lesson">Обратный звонок</a></button>
+          <div class="black-button font-1vw"><a href="/#take-a-lesson">Обратный звонок</a></div>
           <div class="contacts">
             <div class="number"><a href="tel:+74997558600">8 (499) 755 86 00</a></div>
             <address>г. Москва, Потаповский пер. 3с1</address>
@@ -49,227 +49,241 @@
           <li><a class="whatsapp" href="https://wa.me/79258004683"></a></li>
           <li><a class="telegram" href="https://t.me/sandlerrockschool"></a></li>
         </ul>
-        <div class="try-lesson"><a href="/#take-a-lesson">Пробное занятие</a></div>
+        <div class="red-button"><a href="/#take-a-lesson">Пробное занятие</a></div>
       </div>
     </div>
   </section>
-  <section class="section-2">
-    <div class="section-2__text">
-      <h1>НАШИ КУРСЫ</h1>
-      <p>Направления, по которым вы можете пройти мастер-классы</p>
-    </div>
-    <div class="section-2__courses">
-      <nav class="section-2__menu">
-        <ul class="section-2__list">
-          <li class="section-2__item selected">Все</li>
-          <li class="section-2__item">Вокал</li>
-          <li class="section-2__item">Гитара</li>
-          <li class="section-2__item">Ударные</li>
-          <li class="section-2__item">Клавишные</li>
-        </ul>
-      </nav>
-      <div class="section-2__content">
-        <div class="section-2__cards">
+  <section class="our-courses">
+    <div class="wrapper">
+      <div class="heading">
+        <h1>НАШИ КУРСЫ</h1>
+        <p>Направления, по которым вы можете пройти мастер-классы</p>
+      </div>
+      <div class="our-courses__container">
+        <nav class="our-courses__menu">
+          <ul class="our-courses__list">
+            <li class="our-courses__item selected">Все</li>
+            <li class="our-courses__item">Вокал</li>
+            <li class="our-courses__item">Гитара</li>
+            <li class="our-courses__item">Ударные</li>
+            <li class="our-courses__item">Клавишные</li>
+          </ul>
+        </nav>
+        <div class="our-courses__content">
+          <div class="our-courses__card-list">
 
-          <div class="card" data-instrument="guitar">
-            <div class="img-container">
-              <img src="./assets/acoustic-guitar.png" alt="">
-            </div>
-            <div class="card-container">
-              <h2>Акустическая гитара</h2>
-              <div class="more">Подробнее</div>
-            </div>
-          </div>
-          
-          <div class="card" data-instrument="guitar">
-            <div class="img-container">
-              <img src="./assets/electric-guitar.png" alt="">
-            </div>
-            <div class="card-container">
-              <h2>Электрогитара</h2>
-              <div class="more">Подробнее</div>
-            </div>
-          </div>
-
-          <div class="card" data-instrument="guitar">
-            <div class="img-container">
-              <img src="./assets/bass-guitar.png" alt="">
-            </div>
-            <div class="card-container">
-              <h2>Бас гитара</h2>
-              <div class="more">Подробнее</div>
-            </div>
-          </div>
-
-          <div class="card" data-instrument="vocal">
-            <div class="img-container">
-              <img src="./assets/pop-vocal.png" alt="">
-            </div>
-            <div class="card-container">
-              <h2>Эстрадный вокал</h2>
-              <div class="more">Подробнее</div>
-            </div>
-          </div>
-
-          <div class="card" data-instrument="vocal">
-            <div class="img-container">
-              <img src="./assets/folk-vocal.png" alt="">
-            </div>
-            <div class="card-container">
-              <h2>Народный вокал</h2>
-              <div class="button-container">
+            <div class="card" data-instrument="guitar">
+              <div class="card__img-container">
+                <img src="./assets/acoustic-guitar.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Акустическая гитара</h2>
                 <div class="more">Подробнее</div>
               </div>
             </div>
+  
+            <div class="card" data-instrument="guitar">
+              <div class="card__img-container">
+                <img src="./assets/electric-guitar.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Электрогитара</h2>
+                <div class="more">Подробнее</div>
+              </div>
+            </div>
+  
+            <div class="card" data-instrument="guitar">
+              <div class="card__img-container">
+                <img src="./assets/bass-guitar.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Бас гитара</h2>
+                <div class="more">Подробнее</div>
+              </div>
+            </div>
+  
+            <div class="card" data-instrument="vocal">
+              <div class="card__img-container">
+                <img src="./assets/pop-vocal.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Эстрадный вокал</h2>
+                <div class="more">Подробнее</div>
+              </div>
+            </div>
+  
+            <div class="card" data-instrument="vocal">
+              <div class="card__img-container">
+                <img src="./assets/folk-vocal.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Народный вокал</h2>
+                <div class="button-container">
+                  <div class="more">Подробнее</div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card" data-instrument="vocal">
+              <div class="card__img-container">
+                <img src="./assets/rock-vocal.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Рок вокал</h2>
+                <div class="more">Подробнее</div>
+              </div>
+            </div>
+  
+            <div class="card" data-instrument="vocal">
+              <div class="card__img-container">
+                <img src="./assets/academic-vocal.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Академический вокал</h2>
+                <div class="more">Подробнее</div>
+              </div>
+            </div>
+  
+            <div class="card" data-instrument="drums">
+              <div class="card__img-container">
+                <img src="./assets/drums.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Ударные</h2>
+                <div class="more">Подробнее</div>
+              </div>
+            </div>
+  
+            <div class="card" data-instrument="keys">
+              <div class="card__img-container">
+                <img src="./assets/keys.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Клавишные</h2>
+                <div class="more">Подробнее</div>
+              </div>
+            </div>
+  
           </div>
-
-          <div class="card" data-instrument="vocal">
-            <div class="img-container">
-              <img src="./assets/academic-vocal.png" alt="">
-            </div>
-            <div class="card-container">
-              <h2>Академический вокал</h2>
-              <div class="more">Подробнее</div>
-            </div>
-          </div>
-
-          <div class="card" data-instrument="drums">
-            <div class="img-container">
-              <img src="./assets/drums.png" alt="">
-            </div>
-            <div class="card-container">
-              <h2>Ударные</h2>
-              <div class="more">Подробнее</div>
-            </div>
-          </div>
-
-          <div class="card" data-instrument="keys">
-            <div class="img-container">
-              <img src="./assets/keys.png" alt="">
-            </div>
-            <div class="card-container">
-              <h2>Клавишные</h2>
-              <div class="more">Подробнее</div>
-            </div>
-          </div>
-
         </div>
-      </div>
-      <div class="buttons-container">
-        <div class="all-courses"><a href="/">Все курсы</a></div>
-        <div class="sign"><a href="/#take-a-lesson">Записаться</a></div>
+        <div class="buttons-container">
+          <div class="white-button"><a href="/">Все курсы</a></div>
+          <div class="red-button"><a href="/#take-a-lesson">Записаться</a></div>
+        </div>
       </div>
     </div>
   </section>
-  <section class="section-3">
-    <div class="text-top">
-      <h1 class="white">КТО МЫ?</h1>
-      <div class="section-3__text-container-top">
-        <div class="black-star"><img src="./assets/black-star.png" alt="black-star"></div>
-        <p class="heading-p">
-          Продюсерский центр Игоря Сандлера –
-          <br>
-          многофункциональный музыкальный комплекс,
-          <br>
-          объединяющий в себе две студии звукозаписи
-          <br>
-          полного цикла, Концертный и хореографический
-          <br>
-          залы, а также уникальный музей клавишных
-          <br>
-          инструментов.
-        </p>
-      </div>
-      <div class="foundation-year">
-        <h1 class="black">2011</h1>
-        <p class="p-like">год открытия продюсерского центра</p>
-      </div>
-      <div class="years-in-business">
-        <h1 class="black">40 ЛЕТ</h1>
-        <p class="p-like">в музыкальной индустрии</p>
-      </div>
-    </div>
-    <div class="text-bottom">
-      <h1 class="h1-like white">Я всегда шел
-        <br>
-        не вместе со всеми,
-        <br>
-        <span class="inner-span">а поперек.</span> И всегда
-        <br>
-        объективно
-        <br>
-        относился к себе
-      </h1>
-    </div>
-  </section>
-
-  <section class="section-4">
-    <form action="">
-      <fieldset id="take-a-lesson">
-        <h1 class="heading">НАЧНИТЕ ОБУЧЕНИЕ
-          С ПРОБНОГО УРОКА</h1>
-        <select name="">
-          <option value="" disabled>Формат обучения</option>
-        </select>
-        <input type="text" placeholder="Имя">
-        <input type="tel" placeholder="Телефон">
-        <input class="request" type="submit" value="Оставить заявку">
-      </fieldset>
-    </form>
-  </section>
-  <section class="our-teachers">
-    <h1>Педагоги</h1>
-    <p>Наши педагоги настоящие мастера своего дела
-      <br>
-      с многолетним опытом работы на сцене и преподавания
-    </p>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="img-wrapper">
-            <img src="./assets/fedorova.png" alt="fedorova">
-          </div>
-          <p>Лилия Федорова</p>
-          <div class="lesson-type vocal">
-          </div>
+  <section class="who-we-are">
+    <div class="wrapper">
+      <div class="container__text-top">
+        <h1 class="white">КТО МЫ?</h1>
+        <div class="section-3__text-container-top">
+          <div class="black-star"><img src="./assets/black-star.png" alt=""></div>
+          <p class="heading-p">
+            Продюсерский центр Игоря Сандлера –
+            <br>
+            многофункциональный музыкальный комплекс,
+            <br>
+            объединяющий в себе две студии звукозаписи
+            <br>
+            полного цикла, Концертный и хореографический
+            <br>
+            залы, а также уникальный музей клавишных
+            <br>
+            инструментов.
+          </p>
         </div>
-
-        <div class="swiper-slide">
-          <div class="img-wrapper">
-            <img src="./assets/neto.png" alt="neto">
-          </div>
-          <p>Антонио Нето</p>
-          <div class="lesson-type drums">
-          </div>
+        <div class="foundation-year">
+          <h1 class="black">2011</h1>
+          <p class="p-like">год открытия продюсерского центра</p>
         </div>
-
-        <div class="swiper-slide">
-          <div class="img-wrapper">
-            <img src="./assets/shutova.png" alt="shutova">
-          </div>
-          <p>Ольга Шутова</p>
-          <div class="lesson-type vocal">
-          </div>
+        <div class="years-in-business">
+          <h1 class="black">40 ЛЕТ</h1>
+          <p class="p-like">в музыкальной индустрии</p>
         </div>
-
-
-        <div class="swiper-slide">
-          <div class="img-wrapper">
-            <img src="./assets/halembakov.png" alt="halembakov">
-          </div>
-          <p>Валентин Халембаков</p>
-          <div class="lesson-type guitar">
-          </div>
-        </div>
-
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-    <div class="reviews__button-container">
-      <button class="sign"><a href="/#take-a-lesson">Записаться</a></button>
+      <div class="container__text-bottom">
+        <h1 class="h1-like white">Я всегда шел
+          <br>
+          не вместе со всеми,
+          <br>
+          <span class="inner-span">а поперек.</span> И всегда
+          <br>
+          объективно
+          <br>
+          относился к себе
+        </h1>
+      </div>
+    </section>
+  
+    <section class="section-4">
+      <form action="">
+        <fieldset id="take-a-lesson">
+          <h1 class="heading">НАЧНИТЕ ОБУЧЕНИЕ
+            С ПРОБНОГО УРОКА</h1>
+          <select name="">
+            <option value="" disabled>Формат обучения</option>
+          </select>
+          <input type="text" placeholder="Имя">
+          <input type="tel" placeholder="Телефон">
+          <input class="request" type="submit" value="Оставить заявку">
+        </fieldset>
+      </form>
+    </section>
+    <section class="our-teachers">
+      <h1>Педагоги</h1>
+      <p>Наши педагоги настоящие мастера своего дела
+        <br>
+        с многолетним опытом работы на сцене и преподавания
+      </p>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+  
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./assets/fedorova.png" alt="fedorova">
+            </div>
+            <p>Лилия Федорова</p>
+            <div class="lesson-type vocal">
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./assets/neto.png" alt="neto">
+            </div>
+            <p>Антонио Нето</p>
+            <div class="lesson-type drums">
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./assets/shutova.png" alt="shutova">
+            </div>
+            <p>Ольга Шутова</p>
+            <div class="lesson-type vocal">
+            </div>
+          </div>
+  
+  
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./assets/halembakov.png" alt="halembakov">
+            </div>
+            <p>Валентин Халембаков</p>
+            <div class="lesson-type guitar">
+            </div>
+          </div>
+  
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="reviews__button-container">
+        <button class="red-button"><a href="/#take-a-lesson">Записаться</a></button>
+      </div>
     </div>
   </section>
   <section class="section-5">
@@ -294,8 +308,8 @@
       </p>
     </div>
     <div class="button-container">
-      <div class="see-more">Смотреть еще</div>
-      <div class="try-red"><a href="/#take-a-lesson">Пробное занятие</a></div>
+      <div class="white-button"><a href="">Смотреть еще</a></div>
+      <div class="red-button"><a href="/#take-a-lesson">Пробное занятие</a></div>
     </div>
   </section>
   <section class="students-pics">
@@ -372,26 +386,39 @@
       </p>
     </div>
     <div class="section-7__button-container">
-      <div class="try-white"><a href="/#take-a-lesson">Пробное занятие</a></div>
+      <div class="white-button"><a href="/#take-a-lesson">Пробное занятие</a></div>
     </div>
   </section>
   <section class="section-8">
-    <h1>Контакты</h1>
-    <p class="mina">Мы всегда на связи!</p>
-    <div class="sandler-container">
-      <a href="/"><img src="./assets/logo/full-logo-red.svg" alt=""></a>
-    </div>
+    <div class="section-8__wrapper">
 
-    <p>Режим работы:</p>
-    <p class="mina">Ежедневно с 10:00 до 22:00</p>
-    <div class="section-8__number"><a href="tel:+74997558600">8 (499) 755 86 00</a></div>
-    <address>г. Москва, Потаповский пер. 3с1</address>
-    <ul class="icon-container">
-      <li><a class="tiktok" href=""></a></li>
-      <li><a class="whatsapp" href="https://wa.me/79258004683"></a></li>
-      <li><a class="telegram" href="https://t.me/sandlerrockschool"></a></li>
-    </ul>
-    <button class="callback callback-contacts"><a href="/#take-a-lesson">Обратный звонок</a></button>
+
+      <h1>Контакты</h1>
+      <p class="mina">Мы всегда на связи!</p>
+      <div class="sandler-container">
+        <a href="/"><img src="./assets/logo/full-logo-red.svg" alt=""></a>
+      </div>
+
+      <p>Режим работы:</p>
+      <p class="mina">Ежедневно с 10:00 до 22:00</p>
+      <div class="section-8__number"><a href="tel:+74997558600">8 (499) 755 86 00</a></div>
+      <address>г. Москва, Потаповский пер. 3с1</address>
+      <ul class="icon-container">
+        <!-- <li><a class="tiktok" href=""></a></li> -->
+        <li><a class="whatsapp" href="https://wa.me/79258004683"></a></li>
+        <li><a class="telegram" href="https://t.me/sandlerrockschool"></a></li>
+      </ul>
+      <button class="black-button"><a href="/#take-a-lesson">Обратный звонок</a></button>
+    </div>
+    <div class='yandex-map' style="position:relative;overflow:hidden;"><a
+        href="https://yandex.ru/maps/org/prodyuserskiy_tsentr_igorya_sandlera/1220320124/?utm_medium=mapframe&utm_source=maps"
+        style="color:#eee;font-size:12px;position:absolute;top:0px;">Продюсерский центр Игоря Сандлера</a><a
+        href="https://yandex.ru/maps/213/moscow/category/producer_center/184105592/?utm_medium=mapframe&utm_source=maps"
+        style="color:#eee;font-size:12px;position:absolute;top:14px;">Продюсерский центр в Москве</a><a
+        href="https://yandex.ru/maps/213/moscow/category/recording_studio/184105594/?utm_medium=mapframe&utm_source=maps"
+        style="color:#eee;font-size:12px;position:absolute;top:28px;">Студия звукозаписи в Москве</a><iframe
+        src="https://yandex.ru/map-widget/v1/?ll=37.639213%2C55.763791&mode=search&oid=1220320124&ol=biz&z=16.1"
+        width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
   </section>
   <footer class="footer">
     <div class="footer__top-line">
@@ -408,11 +435,11 @@
       </nav>
       <div class="footer__icons-container">
         <ul class="icon-container">
-          <li><a class="tiktok" href=""></a></li>
+          <!-- <li><a class="tiktok" href=""></a></li> -->
           <li><a class="whatsapp" href="https://wa.me/79258004683"></a></li>
           <li><a class="telegram" href="https://t.me/sandlerrockschool"></a></li>
         </ul>
-        <button class="callback callback-footer"><a href="/#take-a-lesson">Обратный звонок</a></button>
+        <button class="black-button"><a href="/#take-a-lesson">Обратный звонок</a></button>
       </div>
     </div>
     <div class="footer__bottom-line">

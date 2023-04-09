@@ -123,13 +123,13 @@ p {
   }
 
   50% {
-    opacity: 0.5;
     transform: translateY(-15px);
+    opacity: 0.5;
   }
 
   100% {
-    opcaity: 1;
     transform: translateY(0px);
+    opacity: 1;
   }
 }
 
@@ -283,9 +283,7 @@ p {
 
     h1 {
       pointer-events: none;
-      // color: transparent;
       color: white;
-      // animation: redLineAppear 6s forwards infinite linear;
     }
 
 
@@ -315,11 +313,12 @@ p {
         li {
 
           &:first-child {
+            opacity: 0;
             animation: unhidden 1.3s .5s forwards;
           }
-
+          
           &:last-child {
-
+            opacity: 0;
             animation: unhidden 1.6s .5s forwards;
           }
 
@@ -849,16 +848,6 @@ p {
   .unique-project__button-container {
     display: flex;
     justify-content: center;
-
-    .try-white {
-      color: white;
-      padding: 1vw 3vw;
-      background-color: transparent;
-      // border-radius: 6.66vw;
-      border: 0.16vw solid white;
-      cursor: pointer;
-      font-size: 2vw;
-    }
   }
 }
 
@@ -924,7 +913,7 @@ p {
 }
 
 .footer {
-  background-color: var(--red);
+  background-color: black;
 
 
   .footer-container {
@@ -1257,7 +1246,6 @@ p {
   justify-content: center;
   align-items: center;
 
-  // animation: shake 0.82s 1s cubic-bezier(.36, .07, .19, .97) both;
   transform: translate(0, 0);
   backface-visibility: hidden;
   transition: .5s;
@@ -1287,16 +1275,13 @@ p {
   padding: 0.75vw 1.6875vw;
 
   border: 1px solid white;
-  // border-radius: 6.66vw;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   transition: .5s;
-
-  animation: unhidden 1.9s .5s forwards;
-
+  
   a:link,
   a:visited {
     color: white;
@@ -1357,4 +1342,12 @@ p {
 
 .glowingWhite {
   animation: glowingWhite 1300ms infinite;
+}
+
+.unhidden {
+  animation: unhidden 1.9s .5s forwards;
+}
+
+.opacityZero {
+  opacity: 0;
 }

@@ -86,12 +86,12 @@ p {
     opacity: 0;
   }
   50% {
-    opacity: 0.5;
     transform: translateY(-15px);
+    opacity: 0.5;
   }
   100% {
-    opcaity: 1;
     transform: translateY(0px);
+    opacity: 1;
   }
 }
 @keyframes opacityFromZeroToOne {
@@ -230,9 +230,11 @@ p {
   transition: 0.5s;
 }
 .master-class .master-class__content .master-class__content__button-container .icon-container li:first-child {
+  opacity: 0;
   animation: unhidden 1.3s 0.5s forwards;
 }
 .master-class .master-class__content .master-class__content__button-container .icon-container li:last-child {
+  opacity: 0;
   animation: unhidden 1.6s 0.5s forwards;
 }
 .master-class .master-class__content .master-class__content__button-container .icon-container li a svg {
@@ -631,14 +633,6 @@ p {
   display: flex;
   justify-content: center;
 }
-.unique-project .unique-project__button-container .try-white {
-  color: white;
-  padding: 1vw 3vw;
-  background-color: transparent;
-  border: 0.16vw solid white;
-  cursor: pointer;
-  font-size: 2vw;
-}
 
 .contacts .contacts__container {
   width: 100%;
@@ -677,7 +671,7 @@ p {
 }
 
 .footer {
-  background-color: var(--red);
+  background-color: black;
 }
 .footer .footer-container {
   display: grid;
@@ -948,7 +942,6 @@ p {
   justify-content: center;
   align-items: center;
   transition: 0.5s;
-  animation: unhidden 1.9s 0.5s forwards;
 }
 .transparent-button a:link,
 .transparent-button a:visited {
@@ -1003,4 +996,12 @@ p {
 
 .glowingWhite {
   animation: glowingWhite 1300ms infinite;
+}
+
+.unhidden {
+  animation: unhidden 1.9s 0.5s forwards;
+}
+
+.opacityZero {
+  opacity: 0;
 }/*# sourceMappingURL=index.css.map */

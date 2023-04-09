@@ -80,25 +80,35 @@ keysButtonFilter.addEventListener('click', (e) => {
 
 
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  // direction: 'vertical',
+const swiper = new Swiper('.swiper-1', {
   slidesPerView: 3,
 
-  // If we need pagination
   pagination: {
     clickable: true,
     el: '.swiper-pagination',
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
 });
 
+var swiper1 = new Swiper(".swiper-2", {
+  slidesPerView: 3,
+
+  spaceBetween: 15,
+  centeredSlides: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+});

@@ -1,0 +1,426 @@
+
+  <section class="our-courses">
+    <div class="wrapper">
+      <div class="heading">
+        <h1>НАШИ КУРСЫ</h1>
+        <p>Направления, по которым вы можете пройти мастер-классы</p>
+      </div>
+      <div class="our-courses__container">
+        <nav class="our-courses__menu">
+          <ul class="our-courses__list">
+            <li class="our-courses__item selected">Все</li>
+            <li class="our-courses__item">Вокал</li>
+            <li class="our-courses__item">Гитара</li>
+            <li class="our-courses__item">Ударные</li>
+            <li class="our-courses__item">Клавишные</li>
+          </ul>
+        </nav>
+        <div class="our-courses__content">
+          <div class="our-courses__card-list">
+
+            <div class="card" data-instrument="guitar">
+              <div class="card__img-container">
+                <img src="./assets/acoustic-guitar.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Акустическая гитара</h2>
+                <div class="more"><a href="">Подробнее</a></div>
+              </div>
+            </div>
+
+            <div class="card" data-instrument="guitar">
+              <div class="card__img-container">
+                <img src="./assets/electric-guitar.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Электрогитара</h2>
+                <div class="more"><a href="">Подробнее</a></div>
+              </div>
+            </div>
+
+            <div class="card" data-instrument="guitar">
+              <div class="card__img-container">
+                <img src="./assets/bass-guitar.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Бас гитара</h2>
+                <div class="more"><a href="">Подробнее</a></div>
+              </div>
+            </div>
+
+            <div class="card" data-instrument="vocal">
+              <div class="card__img-container">
+                <img src="./assets/pop-vocal.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Эстрадный вокал</h2>
+                <div class="more"><a href="">Подробнее</a></div>
+              </div>
+            </div>
+
+            <div class="card" data-instrument="vocal">
+              <div class="card__img-container">
+                <img src="./assets/folk-vocal.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Народный вокал</h2>
+                <div class="button-container">
+                  <div class="more"><a href="">Подробнее</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" data-instrument="vocal">
+              <div class="card__img-container">
+                <img src="./assets/rock-vocal.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Рок вокал</h2>
+                <div class="more"><a href="">Подробнее</a></div>
+              </div>
+            </div>
+
+            <div class="card" data-instrument="vocal">
+              <div class="card__img-container">
+                <img src="./assets/academic-vocal.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Академический вокал</h2>
+                <div class="more"><a href="">Подробнее</a></div>
+              </div>
+            </div>
+
+            <div class="card" data-instrument="drums">
+              <div class="card__img-container">
+                <img src="./assets/drums.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Ударные</h2>
+                <div class="more"><a href="">Подробнее</a></div>
+              </div>
+            </div>
+
+            <div class="card" data-instrument="keys">
+              <div class="card__img-container">
+                <img src="./assets/keys.png" alt="">
+              </div>
+              <div class="card-container">
+                <h2>Клавишные</h2>
+                <div class="more"><a href="">Подробнее</a></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="buttons-container">
+          <div class="white-button"><a href="/">Все курсы</a></div>
+          <div class="red-button"><a href="/#take-a-lesson">Записаться</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="who-we-are">
+    <div class="wrapper">
+      <div class="container__text-top">
+        <h1 class="white">КТО МЫ?</h1>
+        <div class="section-3__text-container-top">
+          <div class="black-star"><img src="./assets/black-star.png" alt=""></div>
+          <p class="heading-p">
+            Продюсерский центр Игоря Сандлера –
+            <br>
+            многофункциональный музыкальный комплекс,
+            <br>
+            объединяющий в себе две студии звукозаписи
+            <br>
+            полного цикла, Концертный и хореографический
+            <br>
+            залы, а также уникальный музей клавишных
+            <br>
+            инструментов.
+          </p>
+        </div>
+        <div class="foundation-year">
+          <h1 class="black">2011</h1>
+          <p class="p-like">год открытия продюсерского центра</p>
+        </div>
+        <div class="years-in-business">
+          <h1 class="black">40 ЛЕТ</h1>
+          <p class="p-like">в музыкальной индустрии</p>
+        </div>
+      </div>
+      <div class="container__text-bottom">
+        <h1 class="h1-like white">Я всегда шел
+          <br>
+          не вместе со всеми,
+          <br>
+          <span class="inner-span">а поперек.</span> И всегда
+          <br>
+          объективно
+          <br>
+          относился к себе
+        </h1>
+      </div>
+  </section>
+
+  <section class="section-4">
+    <form action="">
+      <fieldset id="take-a-lesson">
+        <h1 class="heading">НАЧНИТЕ ОБУЧЕНИЕ
+          С ПРОБНОГО УРОКА</h1>
+        <select name="">
+          <option value="" disabled>Формат обучения</option>
+        </select>
+        <input type="text" placeholder="Имя">
+        <input type="tel" placeholder="Телефон">
+        <input class="request" type="submit" value="Оставить заявку">
+      </fieldset>
+    </form>
+  </section>
+  <section class="our-teachers">
+    <h1>Педагоги</h1>
+    <p>Наши педагоги настоящие мастера своего дела
+      <br>
+      с многолетним опытом работы на сцене и преподавания
+    </p>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="img-wrapper">
+            <img src="./assets/fedorova.png" alt="fedorova">
+          </div>
+          <p>Лилия Федорова</p>
+          <div class="lesson-type vocal">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-wrapper">
+            <img src="./assets/neto.png" alt="neto">
+          </div>
+          <p>Антонио Нето</p>
+          <div class="lesson-type drums">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="img-wrapper">
+            <img src="./assets/shutova.png" alt="shutova">
+          </div>
+          <p>Ольга Шутова</p>
+          <div class="lesson-type vocal">
+          </div>
+        </div>
+
+
+        <div class="swiper-slide">
+          <div class="img-wrapper">
+            <img src="./assets/halembakov.png" alt="halembakov">
+          </div>
+          <p>Валентин Халембаков</p>
+          <div class="lesson-type guitar">
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="reviews__button-container">
+      <button class="red-button"><a href="/#take-a-lesson">Записаться</a></button>
+    </div>
+    </div>
+  </section>
+  <section class="section-5">
+    <h1>ОТЗЫВЫ</h1>
+    <div class="section-5__content">
+      <div class="h1-quote">«</div>
+      <p class="info-text">Выступление наших детей на первом отчетном концерте
+        <br>
+        произвело на меня огромное впечатление. Представленная
+        <br>
+        программа прозвучала ярко, эмоционально. Невероятно, что дети
+        <br>
+        встретились и объединились в коллектив совсем недавно, и уже
+        <br>
+        показали такой высокий уровень. Мы счастливы, что попали
+        <br>
+        в уникальный проект «Золотая нота. Трамплин для талантов»!
+      </p>
+      <p class="maria">Мама Таисии Скомороховой
+        <br>
+        (Нугуманова Гульнара Рамилевна)
+      </p>
+    </div>
+    <div class="button-container">
+      <div class="white-button"><a href="">Смотреть еще</a></div>
+      <div class="red-button"><a href="/#take-a-lesson">Пробное занятие</a></div>
+    </div>
+  </section>
+  <section class="students-pics">
+    <h1>Фото учеников</h1>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <section class="section-7">
+    <h1>Уникальный
+      <br>
+      молодежный проект
+    </h1>
+    <div class="section-7__text-container-top">
+      <p>Программа обучения построена на сочетании
+        <br>
+        индивидуальных занятий профильных
+        <br>
+        предметов музыкантов (вокала, гитары,
+        <br>
+        бас-гитары, клавишных, ударных), обязательных
+        <br>
+        для посещения, а также факультативных
+        <br>
+        занятий по слушанию музыки и обсуждению
+        <br>
+        стилей, жанров и направлений.
+        <br>
+        <br>
+        Во время прохождения обучения ежемесячно
+        <br>
+        проводятся мастер-классы с известными
+        <br>
+        российскими музыкантами и онлайн-занятия
+        <br>
+        с мировыми преподавателями по вокалу.
+      </p>
+
+    </div>
+    <div class="section-7__text-container-middle">
+      <p>Для выступления ансамблем юные музыканты
+        <br>
+        приобретают необходимые навыки сыгранности,
+        <br>
+        импровизации, смогут потренироваться создавать
+        <br>
+        собственные музыкаль ные произведения
+        <br>
+        и оформлять права на них. У нас постоянно проходят
+        <br>
+        учебные концерты на площадке Продюсерского
+        <br>
+        центра Игоря Сандлера, а также выступления
+        <br>
+        на других известных клубных площадках.
+        <br>
+        <br>
+        Наши группы выступают на самых крупных
+        <br>
+        музыкальных фестивалях г. Москвы на одной сцене
+        <br>
+        с мировыми звездами.
+      </p>
+    </div>
+    <div class="section-7__text-container-bottom">
+      <p>Наши учащиеся знакомятся с основами продвижения музыкальных групп, узнают как правильно создать свой имидж,
+        получить необходимую информационную поддержку и самопродюсировать себя, чтобы начать самостоятельное
+        продвижение.
+      </p>
+    </div>
+    <div class="section-7__button-container">
+      <div class="white-button"><a href="/#take-a-lesson">Пробное занятие</a></div>
+    </div>
+  </section>
+  <section class="section-8">
+    <div class="section-8__wrapper">
+
+
+      <h1>Контакты</h1>
+      <p class="mina">Мы всегда на связи!</p>
+      <div class="sandler-container">
+        <a href="/"><img src="./assets/logo/full-logo-red.svg" alt=""></a>
+      </div>
+
+      <p>Режим работы:</p>
+      <p class="mina">Ежедневно с 10:00 до 22:00</p>
+      <div class="section-8__number"><a href="tel:+74997558600">8 (499) 755 86 00</a></div>
+      <address>г. Москва, Потаповский пер. 3с1</address>
+      <ul class="icon-container">
+        <!-- <li><a class="tiktok" href=""></a></li> -->
+        <li>
+          <a class="whatsapp" href="https://wa.me/79258004683" target="_blank">
+            <img src="./assets/icons/whatsapp.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="telegram" href="https://t.me/sandlerrockschool" target="_blank">
+            <img src="./assets/icons/telegram.png" alt="">
+          </a>
+        </li>
+      </ul>
+      <button class="black-button"><a href="/#take-a-lesson">Обратный звонок</a></button>
+    </div>
+    <div class='yandex-map' style="position:relative;overflow:hidden;"><a
+        href="https://yandex.ru/maps/org/prodyuserskiy_tsentr_igorya_sandlera/1220320124/?utm_medium=mapframe&utm_source=maps"
+        style="color:#eee;font-size:12px;position:absolute;top:0px;">Продюсерский центр Игоря Сандлера</a><a
+        href="https://yandex.ru/maps/213/moscow/category/producer_center/184105592/?utm_medium=mapframe&utm_source=maps"
+        style="color:#eee;font-size:12px;position:absolute;top:14px;">Продюсерский центр в Москве</a><a
+        href="https://yandex.ru/maps/213/moscow/category/recording_studio/184105594/?utm_medium=mapframe&utm_source=maps"
+        style="color:#eee;font-size:12px;position:absolute;top:28px;">Студия звукозаписи в Москве</a><iframe
+        src="https://yandex.ru/map-widget/v1/?ll=37.639213%2C55.763791&mode=search&oid=1220320124&ol=biz&z=16.1"
+        width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+  </section>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-container">
+
+        <div class="logo-container">
+          <a href="/"><img src="./assets/logo/full-logo-white.svg" alt=""></a>
+        </div>
+
+        <nav class="footer__menu">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="">О нас</a></li>
+            <li class="footer__item"><a href="">Курсы</a></li>
+            <li class="footer__item"><a href="">Цены</a></li>
+            <li class="footer__item"><a href="">FAQ</a></li>
+            <li class="footer__item"><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__icons-container">
+          <ul class="icon-container">
+            <li>
+              <a class="whatsapp" href="https://wa.me/79258004683" target="_blank">
+                <img src="./assets/icons/whatsapp.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a class="telegram" href="https://t.me/sandlerrockschool" target="_blank">
+                <img src="./assets/icons/telegram.png" alt="">
+              </a>
+            </li>
+          </ul>
+          <div class="black-button"><a href="/#take-a-lesson">Обратный звонок</a></div>
+        </div>
+
+        <p>Фонд поддержки одаренных детей и молодежи Игоря Сандлера
+          <!-- <br> -->
+          ИНН 7719290541; КПП771901001; ОГРН 1137799010030
+          <!-- <br> -->
+          Юридический адрес: 105203, г. Москва, ул. Первомайская,
+          <!-- <br> -->
+          д. 109/2, кв. 17
+        </p>
+
+        <div class="footer__contacts">
+          <div class="number"><a href="tel:+74997558600">8 (499) 755 86 00</a></div>
+          <address>г. Москва, Потаповский пер. 3с1</address>
+        </div>
+      </div>
+    </div>
+  </footer>

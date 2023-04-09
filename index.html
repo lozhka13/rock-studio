@@ -5,71 +5,157 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style/style.css">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"> -->
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <title>Sandler Rock School</title>
 </head>
 
 <body>
-  <section class="section-1">
-    <header class="header">
-      <div class="header-container">
+  <section class="master-class">
+    <div class="wrapper blackout">
+      <header class="header">
+        <div class="header-container">
 
-        <div class="header__logo-container">
-          <!-- IMG -->
-          <a href="/"><img src="./assets/logo/full-logo-white.svg" alt="logo"></a>
-        </div>
-
-        <nav class="header__menu">
-          <ul class="header__list">
-            <li class="header__item"><a href="">О нас</a></li>
-            <li class="header__item"><a href="">Курсы</a></li>
-            <li class="header__item"><a href="">Цены</a></li>
-            <li class="header__item"><a href="">FAQ</a></li>
-            <li class="header__item"><a href="">Контакты</a></li>
-          </ul>
-        </nav>
-
-        <div class="contacts-container">
-          <div class="black-button"><a href="/#take-a-lesson">Обратный звонок</a></div>
-          <div class="header__contacts">
-            <div class="number"><a href="tel:+74997558600">8 (499) 755 86 00</a></div>
-            <address>г. Москва, Потаповский пер. 3с1</address>
+          <div class="header__logo-container">
+            <!-- IMG -->
+            <a href="/">
+              <!-- Поменять в файле филл на транспарент и менять цвет бэкграунда по бэкграунд клип -->
+              <svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732.65 258.45">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #ffffff;
+                    }
+                  </style>
+                </defs>
+                <g id="_Слой_1-2" data-name="Слой 1">
+                  <path class="cls-1"
+                    d="M118.85,88.63V50.7c0-7.64,3.68-11.35,11.33-11.42h14.21c3.78,0,5.41,1.24,5.36,4s-1.69,3.79-5.54,3.8c-4.73,0-9.47-.11-14.2,.07-1.08,0-2.13,1.06-3.19,1.63,.89,.74,1.69,1.92,2.69,2.13,8,1.68,11.3,5.08,12.73,13,.15,.86,1.19,1.56,1.82,2.33,.62-.87,1.7-1.7,1.77-2.62,.29-3.5-1.42-6.9-6.09-12.75h5.09c6,0,8.93-3,9-9.24V6.42c-.04-1.03,0-2.06,.09-3.08,.07-1.88,1.65-3.35,3.53-3.29,.08,0,.15,0,.23,.02,1.91-.07,3.52,1.4,3.62,3.31,.07,.82,.09,1.65,.06,2.47V51.25c0,11.64-6.79,18.63-18.44,19-5.43,.15-10.91,.39-16.21-2.79v94.44c-26.45,2.63-52.71,4.43-80-.09,2.61-3.67,4.56-7,7.08-9.87,6.38-7.38,15.05-12.4,24.63-14.25,1.28-.37,2.33-1.28,2.88-2.49,2.36-6.23,4.47-12.55,6.92-19.55,2.3,6.41,4.54,12.12,6.35,18,.6,2.69,2.79,4.73,5.51,5.13,7.19,1.78,13.67,5.69,18.6,11.21,.07-1.64,.15-2.62,.16-3.6,0-14.1-.06-28.2,.09-42.31,0-2.51-.83-3.59-3.05-4.47-44.96-17.87-95.38,10.49-103.49,58.21-6.43,37.8,15.25,74.28,51.78,85.88,46.64,14.83,92.26-16,99.08-60.54,4-26.15-3.72-48.49-22.27-67.2-2.59-2.62-2.76-6.41-.3-8.78,2.26-2.35,6-2.43,8.36-.16,.15,.15,.3,.3,.43,.46,12.46,14.47,22.19,30.3,25,49.68,3.5,24.61-1.66,47.19-16.92,66.82-18.59,23.91-43.43,35.51-73.81,34.39C42.46,256.84,7.15,225.76,.92,183.46c-6.72-45.67,24.1-89.68,69.07-98.59,15.09-3.04,30.71-2.08,45.31,2.79,1,.34,2.11,.58,3.55,.97Z" />
+                  <path class="cls-1"
+                    d="M41.54,168.85c.65,2.35,1.09,4.56,1.89,6.63,1.05,2.74,3.35,4.82,6.18,5.6,8,2.45,16.06,4.94,24.12,7.31,7.06,2.07,10.7,0,13.17-7.47,.38,.91,.69,1.6,1,2.29,2,4.85,5.73,6.94,10.88,5.51,8.78-2.45,17.53-5,26.21-7.83,4-1.27,5.84-4.64,6.69-8.58,.24-1.09,.42-2.2,.63-3.31,7,1.86,10.37,11.51,6.59,18.53-1.59,3.04-4.21,5.4-7.4,6.66-1.41,.64-2.55,1.76-3.2,3.16-7.34,17.33-23.47,28.31-41.6,28.12s-34.09-11.3-41.19-28.71c-.73-1.23-1.86-2.17-3.21-2.66-5.1-2.26-8.49-7.21-8.75-12.78-.13-5.4,3.03-10.33,7.99-12.47Z" />
+                  <path class="cls-1"
+                    d="M118.83,39.1V5.36C118.83,1.64,120.16-.07,122.83,0s3.84,1.67,3.85,5.21c0,9.25-.06,18.5,.06,27.75,0,2-.63,2.86-2.49,3.45-1.87,.76-3.68,1.66-5.42,2.69Z" />
+                  <path class="cls-1"
+                    d="M138.21,35.28h-7.69c0-2.69-.41-5.4,.16-7.88,.6-1.61,1.92-2.86,3.56-3.38,2.11-.52,3.73,1.09,3.92,3.32,.22,2.51,.05,5.06,.05,7.94Z" />
+                  <path class="cls-1"
+                    d="M149.75,36l-7.58-.9c0-2.45-.05-4.89,0-7.32s1.43-3.88,3.81-3.89c1.89-.17,3.56,1.21,3.73,3.1,.02,.17,.02,.35,0,.52,.1,2.76,.03,5.51,.03,8.49Z" />
+                  <path class="cls-1"
+                    d="M249.15,150.58h-19.06c-7-.04-12.66-5.71-12.7-12.71h6.35c0,3.51,2.84,6.35,6.35,6.36h19.06c3.51-.14,6.24-3.1,6.1-6.61-.13-3.31-2.79-5.97-6.1-6.1h-19.06c-7.02-.2-12.55-6.04-12.35-13.06,.19-6.74,5.61-12.16,12.35-12.35h19.06c6.96,.13,12.57,5.74,12.7,12.7h-6.35c-.01-3.5-2.85-6.34-6.35-6.35h-19.06c-3.51,.14-6.24,3.1-6.1,6.61,.13,3.31,2.79,5.97,6.1,6.1h19.06c7.02,.2,12.55,6.04,12.35,13.06-.19,6.74-5.61,12.16-12.35,12.35h0Z" />
+                  <path class="cls-1"
+                    d="M312.05,150.58h-6.35v-12.71h-31.77v12.71h-6.35v-31.77c.06-7,5.72-12.66,12.72-12.71h19c6.95,.15,12.55,5.75,12.71,12.7l.04,31.78Zm-31.75-38.12c-3.51,0-6.35,2.84-6.36,6.35v12.71h31.76v-12.71c-.01-3.51-2.85-6.34-6.36-6.35h-19.04Z" />
+                  <path class="cls-1"
+                    d="M362.88,150.58h-6.36l-31.76-34.18v34.18h-6.35v-44.48h6.35l31.76,33.67v-33.67h6.36v44.48Z" />
+                  <path class="cls-1"
+                    d="M413.7,137.87c-.06,6.99-5.71,12.64-12.7,12.71h-31.76v-44.48h31.76c6.96,.13,12.57,5.74,12.7,12.7v19.07Zm-6.35-19.06c-.01-3.5-2.85-6.34-6.35-6.35h-25.41v31.77h25.41c3.51-.01,6.34-2.85,6.35-6.36v-19.06Z" />
+                  <path class="cls-1" d="M425.78,144.23h38.12v6.35h-44.47v-44.48h6.35v38.13Z" />
+                  <path class="cls-1"
+                    d="M473.43,125.17h31.76v6.35h-31.76v12.71h38.12v6.35h-44.47v-44.48h44.47v6.35h-38.12v12.72Z" />
+                  <path class="cls-1"
+                    d="M556.59,150.58l-12.7-12.71h-20.9v12.71h-6.35v-44.48h31.76c6.97,.11,12.59,5.73,12.7,12.7v6.36c-.05,5.49-3.59,10.35-8.8,12.08l8.8,8.86v4.51l-4.51-.03Zm-1.84-31.77c-.01-3.5-2.85-6.34-6.35-6.35h-25.41v19.06h25.41c3.5-.01,6.34-2.85,6.35-6.35v-6.36Z" />
+                  <path class="cls-1"
+                    d="M257.98,226.82l-12.68-12.72h-20.9v12.71h-6.36v-44.46h31.76c6.98,.12,12.6,5.77,12.69,12.75v6.35c-.06,5.5-3.61,10.35-8.83,12.07l8.83,8.83v4.51l-4.51-.04Zm-1.84-31.72c-.01-3.51-2.85-6.34-6.36-6.35h-25.4v19h25.4c3.51,0,6.35-2.84,6.36-6.35v-6.3Z" />
+                  <path class="cls-1"
+                    d="M312.05,214.1c-.02,7.03-5.72,12.72-12.75,12.72h-19c-6.99,.03-12.69-5.61-12.72-12.6,0-.04,0-.08,0-.12v-19c0-7.03,5.69-12.73,12.72-12.75h19c6.99,.13,12.62,5.76,12.75,12.75v19Zm-6.35-19c-.01-3.51-2.85-6.34-6.36-6.35h-19.04c-3.51,0-6.35,2.84-6.36,6.35v19c.01,3.51,2.85,6.35,6.36,6.36h19c3.52,.01,6.39-2.84,6.4-6.36h0v-19Z" />
+                  <path class="cls-1"
+                    d="M348.9,182.35c6.97,.15,12.58,5.78,12.71,12.75h-6.31c-.01-3.5-2.85-6.34-6.35-6.35h-19.11c-3.5,.01-6.34,2.85-6.35,6.35v19c0,3.51,2.84,6.35,6.35,6.36h19.06c3.52,.02,6.38-2.82,6.4-6.34,0,0,0-.01,0-.02h6.36c-.07,6.99-5.72,12.64-12.71,12.71h-19.11c-7.01-.02-12.68-5.7-12.7-12.71v-19c.09-6.98,5.72-12.62,12.7-12.71l19.06-.04Z" />
+                  <path class="cls-1"
+                    d="M388.93,204.59l22.23,22.23h-8.95l-19.06-19.06h-10.1v19.06h-6.35v-44.47h6.35v19.06h10.1l19.06-19.06h8.95l-22.23,22.24Z" />
+                  <path class="cls-1"
+                    d="M470.89,226.82h-19.06c-7-.04-12.67-5.72-12.7-12.72h6.35c0,3.51,2.84,6.35,6.35,6.36h19.06c3.51-.14,6.24-3.1,6.1-6.61-.13-3.31-2.79-5.97-6.1-6.1h-19.06c-7.02-.2-12.55-6.04-12.35-13.06,.19-6.74,5.61-12.16,12.35-12.35h19.06c6.97,.16,12.57,5.79,12.7,12.76h-6.35c-.01-3.5-2.85-6.34-6.35-6.35h-19.06c-3.51,0-6.35,2.84-6.35,6.35,0,3.51,2.84,6.35,6.35,6.35h19.07c7.02,.2,12.55,6.04,12.35,13.06-.19,6.74-5.61,12.16-12.35,12.35v-.04Z" />
+                  <path class="cls-1"
+                    d="M520.45,182.35c6.97,.16,12.57,5.78,12.7,12.75h-6.35c-.01-3.5-2.85-6.34-6.35-6.35h-19.06c-3.5,.01-6.34,2.85-6.35,6.35v19c0,3.51,2.84,6.35,6.35,6.36h19.06c3.51-.01,6.34-2.85,6.35-6.36h6.35c-.06,6.99-5.71,12.64-12.7,12.71h-19.06c-7.01-.02-12.69-5.7-12.71-12.71v-19c.09-6.98,5.73-12.62,12.71-12.71l19.06-.04Z" />
+                  <path class="cls-1"
+                    d="M544.59,201.41h31.77v-19.06h6.35v44.47h-6.35v-19.06h-31.77v19.06h-6.35v-44.47h6.35v19.06Z" />
+                  <path class="cls-1"
+                    d="M632.9,214.1c-.02,7.01-5.69,12.68-12.7,12.71h-19.06c-6.99,.03-12.68-5.62-12.71-12.61,0-.03,0-.07,0-.1v-19c.02-7.01,5.7-12.69,12.71-12.71h19.06c6.95,.16,12.55,5.76,12.7,12.71v19Zm-6.35-19c-.01-3.5-2.85-6.34-6.35-6.35h-19.06c-3.5,.01-6.34,2.85-6.35,6.35v19c0,3.51,2.84,6.35,6.35,6.36h19.06c3.51-.01,6.34-2.85,6.35-6.36v-19Z" />
+                  <path class="cls-1"
+                    d="M682.46,214.1c-.02,7.01-5.7,12.69-12.71,12.71h-19.05c-6.99,.03-12.68-5.62-12.71-12.61,0-.03,0-.07,0-.1v-19c.02-7.01,5.7-12.69,12.71-12.71h19.05c6.95,.15,12.56,5.76,12.71,12.71v19Zm-6.35-19c-.01-3.51-2.85-6.34-6.36-6.35h-19.05c-3.52-.02-6.38,2.82-6.4,6.34,0,0,0,0,0,.01v19c.01,3.51,2.85,6.35,6.36,6.36h19.05c3.51-.01,6.35-2.85,6.36-6.36l.04-19Z" />
+                  <path class="cls-1" d="M694.54,220.47h38.11v6.35h-44.46v-44.47h6.35v38.12Z" />
+                </g>
+              </svg>
+              <!-- <img src="./assets/logo/full-logo-white.svg" alt="logo"> -->
+            </a>
           </div>
+
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item"><a href="">О нас</a></li>
+              <li class="header__item"><a href="">Курсы</a></li>
+              <li class="header__item"><a href="">Цены</a></li>
+              <li class="header__item"><a href="">FAQ</a></li>
+              <li class="header__item"><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <div class="contacts-container">
+            <div class="black-button glowingRed"><a href="/#take-a-lesson">Обратный звонок</a></div>
+            <div class="header__contacts">
+              <div class="number"><a href="tel:+74997558600">8 (499) 755 86 00</a></div>
+              <address>г. Москва, Потаповский пер. 3с1</address>
+            </div>
+          </div>
+
+        </div>
+      </header>
+      <div class="master-class__content">
+        <div class="master-class__content__text-container">
+          <!-- <h1 class="white">УНИКАЛЬНЫЕ МАСТЕР-КЛАССЫ ДЛЯ ДЕТЕЙ</h1> -->
+          <h1>УНИКАЛЬНЫЕ МАСТЕР-КЛАССЫ ДЛЯ ДЕТЕЙ</h1>
+          <p class="info-text white">Посети мастер-класс в интереснейшем месте Москвы
+            и стань профессиональным музыкантом</p>
         </div>
 
-      </div>
-    </header>
-    <div class="section-1__content">
-      <div class="section-1__content__text-container">
-        <h1>УНИКАЛЬНЫЕ МАСТЕР-КЛАССЫ ДЛЯ ДЕТЕЙ</h1>
-        <p class="info-text">Посети мастер-класс в интереснейшем месте Москвы
-          и стань профессиональным музыкантом</p>
-      </div>
-
-      <div class="section-1__content__button-container">
-        <ul class="icon-container">
-          <li>
-            <a class="whatsapp" href="https://wa.me/79258004683" target="_blank">
-              <img src="./assets/icons/whatsapp.png" alt="">
-            </a>
-          </li>
-          <li>
-            <a class="telegram" href="https://t.me/sandlerrockschool" target="_blank">
-              <img src="../assets/icons/telegram.png" alt="">
-            </a>
-          </li>
-        </ul>
-        <div class="red-button"><a href="/#take-a-lesson">Пробное занятие</a></div>
+        <div class="master-class__content__button-container">
+          <ul class="icon-container">
+            <li>
+              <a class="whatsapp" href="https://wa.me/79258004683" target="_blank">
+                <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #fff;
+                      }
+                    </style>
+                  </defs>
+                  <path class="cls-1"
+                    d="M400,750C207,750,50,593,50,400S207,50,400,50,750,207,750,400,593,750,400,750Zm0-688.55C213.32,61.45,61.45,213.32,61.45,400S213.32,738.55,400,738.55,738.55,586.68,738.55,400,586.68,61.45,400,61.45Z" />
+                  <path class="cls-1"
+                    d="M212.92,588.54c.51-2.14.7-3.34,1.08-4.47,10-29.69,19.91-59.39,30.09-89,1.36-4,.75-7-1.2-10.43a175.12,175.12,0,0,1-21.39-63.09,183.12,183.12,0,0,1,15.22-104.07,175.67,175.67,0,0,1,35.61-51.31c27.87-27.83,61.23-45.54,100.3-52,42.87-7.1,83.56-.33,121.2,21.21,47.09,26.94,76.61,67.4,88.86,120.28a169.26,169.26,0,0,1,4.22,45.75c-1.83,42-15.67,79.55-42.93,111.81C515.42,547,479.3,568.11,435.74,575.85c-40.51,7.19-79.34,1.53-116.06-17.29a12.14,12.14,0,0,0-10.12-.8q-45.71,14.85-91.49,29.42C216.74,587.6,215.38,587.89,212.92,588.54Zm48-47.64c2.48-.73,3.83-1.1,5.17-1.53,16.13-5.19,32.27-10.34,48.37-15.63a8.56,8.56,0,0,1,8,.88c31.37,19.79,65.75,27,102.22,21.84,37.77-5.32,69.57-22.74,94.42-51.91,27.2-31.93,39.52-68.89,36.64-110.87a145,145,0,0,0-15.33-56c-17.41-34.35-43.91-59.26-79.58-74a147,147,0,0,0-86.63-8.58c-35.77,7.18-65.6,24.85-88.76,53.07C258.54,331,247,368.8,251.16,411A144.55,144.55,0,0,0,277,480.78a9.14,9.14,0,0,1,1.34,9.13c-3.91,11.16-7.55,22.41-11.33,33.61C265.1,529,263.16,534.47,260.93,540.9Z" />
+                  <path class="cls-1"
+                    d="M347.12,311.91c10.29,0,11.49.81,15.26,9.89,4.37,10.5,8.69,21,13.16,31.47,1.4,3.28,1.67,6.43-.39,9.33-3.54,5-7.11,9.93-11.07,14.55-2.52,2.94-3,5.47-1,8.8,14.55,24.66,35,42.42,61.69,52.9,3,1.17,5.57.72,7.66-1.81,4.52-5.5,9.11-10.93,13.51-16.53,3.66-4.65,5.46-5.59,10.91-3.11C469,423,481,428.87,493,434.63c3.77,1.8,4,5.16,3.92,8.7-.76,24.14-18.95,33.65-36.63,37.36-14.05,2.95-26.5-3.17-39.28-7.29-37-11.9-63.44-36.95-85.22-67.93-8.14-11.57-16-23.27-19.22-37.29-4.57-19.69.09-36.85,14.64-51.13C335.89,312.49,341.7,311.65,347.12,311.91Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="telegram" href="https://t.me/sandlerrockschool" target="_blank">
+                <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: white;
+                      }
+                    </style>
+                  </defs>
+                  <path class="cls-1"
+                    d="M400,750C207,750,50,593,50,400S207,50,400,50,750,207,750,400,593,750,400,750Zm0-688.55C213.32,61.45,61.45,213.32,61.45,400S213.32,738.55,400,738.55,738.55,586.68,738.55,400,586.68,61.45,400,61.45Z" />
+                  <path class="cls-1"
+                    d="M586,271.67,529.55,538c-4.26,18.79-15.37,23.47-31.16,14.62l-86-63.4L370.85,529.1c-4.59,4.59-8.43,8.43-17.29,8.43l6.18-87.62L519.19,305.83c6.94-6.18-1.5-9.6-10.77-3.42L311.3,426.53,226.44,400c-18.46-5.77-18.79-18.46,3.84-27.32L562.2,244.78C577.57,239,591,248.2,586,271.67Z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="transparent-button glowingRed"><a href="/#take-a-lesson">Пробное занятие</a></div>
+        </div>
       </div>
     </div>
   </section>
+
   <section class="our-courses">
     <div class="wrapper">
       <div class="heading">
         <h1>НАШИ КУРСЫ</h1>
-        <p>Направления, по которым вы можете пройти мастер-классы</p>
+        <p>Направления, по которым вы можете пройти мастер-классы:</p>
       </div>
       <div class="our-courses__container">
         <nav class="our-courses__menu">
@@ -86,7 +172,7 @@
 
             <div class="card" data-instrument="guitar">
               <div class="card__img-container">
-                <img src="./assets/acoustic-guitar.png" alt="">
+                <img src="./assets/AG.png" alt="">
               </div>
               <div class="card-container">
                 <h2>Акустическая гитара</h2>
@@ -96,7 +182,7 @@
 
             <div class="card" data-instrument="guitar">
               <div class="card__img-container">
-                <img src="./assets/electric-guitar.png" alt="">
+                <img src="./assets/AG.png" alt="">
               </div>
               <div class="card-container">
                 <h2>Электрогитара</h2>
@@ -106,7 +192,7 @@
 
             <div class="card" data-instrument="guitar">
               <div class="card__img-container">
-                <img src="./assets/bass-guitar.png" alt="">
+                <img src="./assets/AG.png" alt="">
               </div>
               <div class="card-container">
                 <h2>Бас гитара</h2>
@@ -116,7 +202,7 @@
 
             <div class="card" data-instrument="vocal">
               <div class="card__img-container">
-                <img src="./assets/pop-vocal.png" alt="">
+                <img src="./assets/AG.png" alt="">
               </div>
               <div class="card-container">
                 <h2>Эстрадный вокал</h2>
@@ -126,7 +212,7 @@
 
             <div class="card" data-instrument="vocal">
               <div class="card__img-container">
-                <img src="./assets/folk-vocal.png" alt="">
+                <img src="./assets/AG.png" alt="">
               </div>
               <div class="card-container">
                 <h2>Народный вокал</h2>
@@ -138,7 +224,7 @@
 
             <div class="card" data-instrument="vocal">
               <div class="card__img-container">
-                <img src="./assets/rock-vocal.png" alt="">
+                <img src="./assets/AG.png" alt="">
               </div>
               <div class="card-container">
                 <h2>Рок вокал</h2>
@@ -148,7 +234,7 @@
 
             <div class="card" data-instrument="vocal">
               <div class="card__img-container">
-                <img src="./assets/academic-vocal.png" alt="">
+                <img src="./assets/AG.png" alt="">
               </div>
               <div class="card-container">
                 <h2>Академический вокал</h2>
@@ -158,7 +244,7 @@
 
             <div class="card" data-instrument="drums">
               <div class="card__img-container">
-                <img src="./assets/drums.png" alt="">
+                <img src="./assets/AG.png" alt="">
               </div>
               <div class="card-container">
                 <h2>Ударные</h2>
@@ -168,7 +254,7 @@
 
             <div class="card" data-instrument="keys">
               <div class="card__img-container">
-                <img src="./assets/keys.png" alt="">
+                <img src="./assets/AG.png" alt="">
               </div>
               <div class="card-container">
                 <h2>Клавишные</h2>
@@ -180,167 +266,186 @@
         </div>
         <div class="buttons-container">
           <div class="white-button"><a href="/">Все курсы</a></div>
-          <div class="red-button"><a href="/#take-a-lesson">Записаться</a></div>
+          <div class="red-button glowingRed"><a href="/#take-a-lesson">Записаться</a></div>
         </div>
       </div>
     </div>
   </section>
   <section class="who-we-are">
     <div class="wrapper">
-      <div class="container__text-top">
+      <div class="container__top">
         <h1 class="white">КТО МЫ?</h1>
-        <div class="section-3__text-container-top">
-          <div class="black-star"><img src="./assets/black-star.png" alt=""></div>
-          <p class="heading-p">
-            Продюсерский центр Игоря Сандлера –
-            <br>
-            многофункциональный музыкальный комплекс,
-            <br>
-            объединяющий в себе две студии звукозаписи
-            <br>
-            полного цикла, Концертный и хореографический
-            <br>
-            залы, а также уникальный музей клавишных
-            <br>
-            инструментов.
-          </p>
-        </div>
-        <div class="foundation-year">
-          <h1 class="black">2011</h1>
-          <p class="p-like">год открытия продюсерского центра</p>
-        </div>
-        <div class="years-in-business">
-          <h1 class="black">40 ЛЕТ</h1>
-          <p class="p-like">в музыкальной индустрии</p>
+        <div class="who-we-are__container-top">
+          <div class="who-we-are__container-top__left">
+
+            <p class="star">
+              Продюсерский центр Игоря Сандлера –
+              многофункциональный музыкальный комплекс,
+              объединяющий в себе две студии звукозаписи
+              полного цикла, Концертный и хореографический
+              залы, а также уникальный музей клавишных
+              инструментов.
+            </p>
+            <div class="facts-container">
+              <div class="facts">
+                <h1 class="black">2011</h1>
+                <p>год открытия продюсерского центра</p>
+              </div>
+
+              <div class="facts">
+                <h1 class="black">40 ЛЕТ</h1>
+                <p>в музыкальной индустрии</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="who-we-are__container-top__right">
+            <img src="./assets/concert-hall.png" alt="">
+            <img class='sandler-img-text' src="./assets/sandler-text.png" alt="">
+          </div>
         </div>
       </div>
-      <div class="container__text-bottom">
-        <h1 class="h1-like white">Я всегда шел
-          <br>
-          не вместе со всеми,
-          <br>
-          <span class="inner-span">а поперек.</span> И всегда
-          <br>
-          объективно
-          <br>
-          относился к себе
-        </h1>
+      <div class="container__bottom">
+        <div class="container__bottom__img-container">
+          <img src="./assets/sandler.png" alt="">
+        </div>
+        <div class="container__bottom__text-container">
+          <h1 class="white">Я всегда шел вместе со всеми, <span class="inner-span">а поперек.</span> И всегда объективно
+            относился к себе
+          </h1>
+        </div>
       </div>
+    </div>
   </section>
 
-  <section class="section-4">
-    <form action="">
-      <fieldset id="take-a-lesson">
-        <h1 class="heading">НАЧНИТЕ ОБУЧЕНИЕ
-          С ПРОБНОГО УРОКА</h1>
-        <select name="">
-          <option value="" disabled>Формат обучения</option>
-        </select>
+  <section class="start-form">
+    <div class="wrapper blackout">
+      <div class="form">
+        <div class="heading">
+          <h1 class="white">Начните обучение с первого урока</h1>
+        </div>
         <input type="text" placeholder="Имя">
-        <input type="tel" placeholder="Телефон">
-        <input class="request" type="submit" value="Оставить заявку">
-      </fieldset>
-    </form>
+        <input type="text" placeholder="Фамилия">
+        <select name="course" id="">
+          <option value="" selected disabled>Формат обучения</option>
+          <option value="">rock</option>
+          <option value="">rock</option>
+          <option value="">rock</option>
+          <option value="">rock</option>
+        </select>
+        <div class="button-container">
+          <div class="red-button glowingWhite">
+            <a href="">Подать заявку</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <section class="our-teachers">
-    <h1>Педагоги</h1>
-    <p>Наши педагоги настоящие мастера своего дела
-      <br>
-      с многолетним опытом работы на сцене и преподавания
-    </p>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
+    <div class="wrapper">
 
-        <div class="swiper-slide">
-          <div class="img-wrapper">
-            <img src="./assets/fedorova.png" alt="fedorova">
-          </div>
-          <p>Лилия Федорова</p>
-          <div class="lesson-type vocal">
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="img-wrapper">
-            <img src="./assets/neto.png" alt="neto">
-          </div>
-          <p>Антонио Нето</p>
-          <div class="lesson-type drums">
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="img-wrapper">
-            <img src="./assets/shutova.png" alt="shutova">
-          </div>
-          <p>Ольга Шутова</p>
-          <div class="lesson-type vocal">
-          </div>
-        </div>
-
-
-        <div class="swiper-slide">
-          <div class="img-wrapper">
-            <img src="./assets/halembakov.png" alt="halembakov">
-          </div>
-          <p>Валентин Халембаков</p>
-          <div class="lesson-type guitar">
-          </div>
-        </div>
-
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-    <div class="reviews__button-container">
-      <button class="red-button"><a href="/#take-a-lesson">Записаться</a></button>
-    </div>
-    </div>
-  </section>
-  <section class="section-5">
-    <h1>ОТЗЫВЫ</h1>
-    <div class="section-5__content">
-      <div class="h1-quote">«</div>
-      <p class="info-text">Выступление наших детей на первом отчетном концерте
+      <h1>Педагоги</h1>
+      <p>Наши педагоги настоящие мастера своего дела
         <br>
-        произвело на меня огромное впечатление. Представленная
-        <br>
-        программа прозвучала ярко, эмоционально. Невероятно, что дети
-        <br>
-        встретились и объединились в коллектив совсем недавно, и уже
-        <br>
-        показали такой высокий уровень. Мы счастливы, что попали
-        <br>
-        в уникальный проект «Золотая нота. Трамплин для талантов»!
+        с многолетним опытом работы на сцене и преподавания
       </p>
-      <p class="maria">Мама Таисии Скомороховой
-        <br>
-        (Нугуманова Гульнара Рамилевна)
-      </p>
-    </div>
-    <div class="button-container">
-      <div class="white-button"><a href="">Смотреть еще</a></div>
-      <div class="red-button"><a href="/#take-a-lesson">Пробное занятие</a></div>
-    </div>
-  </section>
-  <section class="students-pics">
-    <h1>Фото учеников</h1>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./assets/JPG/Ресурс 1.jpg" alt="fedorova">
+            </div>
+            <p>Лилия Федорова</p>
+            <div class="lesson-type vocal">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="img-wrapper neto">
+              <img src="./assets/JPG/Ресурс 2.jpg" alt="neto">
+            </div>
+            <p>Антонио Нето</p>
+            <div class="lesson-type drums">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./assets/JPG/Ресурс 3.jpg" alt="shutova">
+            </div>
+            <p>Ольга Шутова</p>
+            <div class="lesson-type vocal">
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./assets/halembakov.png" alt="halembakov">
+            </div>
+            <p>Валентин Халембаков</p>
+            <div class="lesson-type guitar">
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="reviews__button-container">
+        <button class="red-button glowingRed"><a href="/#take-a-lesson">Записаться</a></button>
+      </div>
     </div>
   </section>
-  <section class="section-7">
+
+  <section class="review">
+    <div class="wrapper">
+      <h1 class="white">ОТЗЫВЫ</h1>
+      <div class="review__content">
+        <div class="img-container">
+          <img src="./assets/1 (36).jpg" alt="">
+
+        </div>
+        <div class="text-container">
+          <p class="info-text">Выступление наших детей на первом отчетном концерте
+            произвело на меня огромное впечатление. Представленная
+            программа прозвучала ярко, эмоционально. Невероятно, что дети
+            встретились и объединились в коллектив совсем недавно, и уже
+            показали такой высокий уровень. Мы счастливы, что попали
+            в уникальный проект «Золотая нота. Трамплин для талантов»!
+          </p>
+          <p class="review__quote">Мама Таисии Скомороховой
+            (Нугуманова Гульнара Рамилевна)
+          </p>
+        </div>
+      </div>
+      <div class="button-container">
+        <div class="white-button"><a href="">Смотреть еще</a></div>
+        <div class="transparent-button glowingWhite"><a href="/#take-a-lesson">Пробное занятие</a></div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="students-pics">
+    <div class="wrapper">
+      <h1>Фото учеников</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section> -->
+  <!-- <section class="unique-project">
     <h1>Уникальный
       <br>
       молодежный проект
     </h1>
-    <div class="section-7__text-container-top">
+    <div class="unique-project__text-container-top">
       <p>Программа обучения построена на сочетании
         <br>
         индивидуальных занятий профильных
@@ -366,7 +471,7 @@
       </p>
 
     </div>
-    <div class="section-7__text-container-middle">
+    <div class="unique-project__text-container-middle">
       <p>Для выступления ансамблем юные музыканты
         <br>
         приобретают необходимые навыки сыгранности,
@@ -391,61 +496,108 @@
         с мировыми звездами.
       </p>
     </div>
-    <div class="section-7__text-container-bottom">
+    <div class="unique-project__text-container-bottom">
       <p>Наши учащиеся знакомятся с основами продвижения музыкальных групп, узнают как правильно создать свой имидж,
         получить необходимую информационную поддержку и самопродюсировать себя, чтобы начать самостоятельное
         продвижение.
       </p>
     </div>
-    <div class="section-7__button-container">
+    <div class="unique-project__button-container">
       <div class="white-button"><a href="/#take-a-lesson">Пробное занятие</a></div>
     </div>
-  </section>
-  <section class="section-8">
-    <div class="section-8__wrapper">
+  </section> -->
+  <section class="contacts">
+    <div class="wrapper">
+      <div class="contacts__container">
 
-
-      <h1>Контакты</h1>
-      <p class="mina">Мы всегда на связи!</p>
-      <div class="sandler-container">
-        <a href="/"><img src="./assets/logo/full-logo-red.svg" alt=""></a>
+        <div class="contacts__container-text">
+          <h1>Контакты</h1>
+          <p>Мы всегда на связи!</p>
+          <div class="logo-container">
+            <a href="/"><img src="./assets/logo/full-logo-red.svg" alt=""></a>
+          </div>
+          <div class="worktime">
+            <p>Режим работы:</p>
+            <p>Ежедневно с 10:00 до 22:00</p>
+          </div>
+          <div class="contacts__contacts">
+            <div class="contacts__number"><a href="tel:+74997558600">8 (499) 755 86 00</a></div>
+            <address>г. Москва, Потаповский пер. 3с1</address>
+          </div>
+          <div class="button-container">
+            <div class="red-button white glowingRed">
+              <a href="/#take-a-lesson">Обратный звонок</a>
+            </div>
+          </div>
+        </div>
+        <div class='yandex-map'><iframe
+            src="https://yandex.ru/map-widget/v1/?ll=37.639213%2C55.763791&mode=search&oid=1220320124&ol=biz&z=16.1"
+            width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
       </div>
 
-      <p>Режим работы:</p>
-      <p class="mina">Ежедневно с 10:00 до 22:00</p>
-      <div class="section-8__number"><a href="tel:+74997558600">8 (499) 755 86 00</a></div>
-      <address>г. Москва, Потаповский пер. 3с1</address>
-      <ul class="icon-container">
-        <!-- <li><a class="tiktok" href=""></a></li> -->
-        <li>
-          <a class="whatsapp" href="https://wa.me/79258004683" target="_blank">
-            <img src="./assets/icons/whatsapp.png" alt="">
-          </a>
-        </li>
-        <li>
-          <a class="telegram" href="https://t.me/sandlerrockschool" target="_blank">
-            <img src="./assets/icons/telegram.png" alt="">
-          </a>
-        </li>
-      </ul>
-      <button class="black-button"><a href="/#take-a-lesson">Обратный звонок</a></button>
     </div>
-    <div class='yandex-map' style="position:relative;overflow:hidden;"><a
-        href="https://yandex.ru/maps/org/prodyuserskiy_tsentr_igorya_sandlera/1220320124/?utm_medium=mapframe&utm_source=maps"
-        style="color:#eee;font-size:12px;position:absolute;top:0px;">Продюсерский центр Игоря Сандлера</a><a
-        href="https://yandex.ru/maps/213/moscow/category/producer_center/184105592/?utm_medium=mapframe&utm_source=maps"
-        style="color:#eee;font-size:12px;position:absolute;top:14px;">Продюсерский центр в Москве</a><a
-        href="https://yandex.ru/maps/213/moscow/category/recording_studio/184105594/?utm_medium=mapframe&utm_source=maps"
-        style="color:#eee;font-size:12px;position:absolute;top:28px;">Студия звукозаписи в Москве</a><iframe
-        src="https://yandex.ru/map-widget/v1/?ll=37.639213%2C55.763791&mode=search&oid=1220320124&ol=biz&z=16.1"
-        width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
   </section>
   <footer class="footer">
     <div class="wrapper">
       <div class="footer-container">
 
-        <div class="logo-container">
-          <a href="/"><img src="./assets/logo/full-logo-white.svg" alt=""></a>
+        <div class="footer__logo-container">
+          <a href="/">
+            <svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732.65 258.45">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #ffffff;
+                  }
+                </style>
+              </defs>
+              <g id="_Слой_1-2" data-name="Слой 1">
+                <path class="cls-1"
+                  d="M118.85,88.63V50.7c0-7.64,3.68-11.35,11.33-11.42h14.21c3.78,0,5.41,1.24,5.36,4s-1.69,3.79-5.54,3.8c-4.73,0-9.47-.11-14.2,.07-1.08,0-2.13,1.06-3.19,1.63,.89,.74,1.69,1.92,2.69,2.13,8,1.68,11.3,5.08,12.73,13,.15,.86,1.19,1.56,1.82,2.33,.62-.87,1.7-1.7,1.77-2.62,.29-3.5-1.42-6.9-6.09-12.75h5.09c6,0,8.93-3,9-9.24V6.42c-.04-1.03,0-2.06,.09-3.08,.07-1.88,1.65-3.35,3.53-3.29,.08,0,.15,0,.23,.02,1.91-.07,3.52,1.4,3.62,3.31,.07,.82,.09,1.65,.06,2.47V51.25c0,11.64-6.79,18.63-18.44,19-5.43,.15-10.91,.39-16.21-2.79v94.44c-26.45,2.63-52.71,4.43-80-.09,2.61-3.67,4.56-7,7.08-9.87,6.38-7.38,15.05-12.4,24.63-14.25,1.28-.37,2.33-1.28,2.88-2.49,2.36-6.23,4.47-12.55,6.92-19.55,2.3,6.41,4.54,12.12,6.35,18,.6,2.69,2.79,4.73,5.51,5.13,7.19,1.78,13.67,5.69,18.6,11.21,.07-1.64,.15-2.62,.16-3.6,0-14.1-.06-28.2,.09-42.31,0-2.51-.83-3.59-3.05-4.47-44.96-17.87-95.38,10.49-103.49,58.21-6.43,37.8,15.25,74.28,51.78,85.88,46.64,14.83,92.26-16,99.08-60.54,4-26.15-3.72-48.49-22.27-67.2-2.59-2.62-2.76-6.41-.3-8.78,2.26-2.35,6-2.43,8.36-.16,.15,.15,.3,.3,.43,.46,12.46,14.47,22.19,30.3,25,49.68,3.5,24.61-1.66,47.19-16.92,66.82-18.59,23.91-43.43,35.51-73.81,34.39C42.46,256.84,7.15,225.76,.92,183.46c-6.72-45.67,24.1-89.68,69.07-98.59,15.09-3.04,30.71-2.08,45.31,2.79,1,.34,2.11,.58,3.55,.97Z" />
+                <path class="cls-1"
+                  d="M41.54,168.85c.65,2.35,1.09,4.56,1.89,6.63,1.05,2.74,3.35,4.82,6.18,5.6,8,2.45,16.06,4.94,24.12,7.31,7.06,2.07,10.7,0,13.17-7.47,.38,.91,.69,1.6,1,2.29,2,4.85,5.73,6.94,10.88,5.51,8.78-2.45,17.53-5,26.21-7.83,4-1.27,5.84-4.64,6.69-8.58,.24-1.09,.42-2.2,.63-3.31,7,1.86,10.37,11.51,6.59,18.53-1.59,3.04-4.21,5.4-7.4,6.66-1.41,.64-2.55,1.76-3.2,3.16-7.34,17.33-23.47,28.31-41.6,28.12s-34.09-11.3-41.19-28.71c-.73-1.23-1.86-2.17-3.21-2.66-5.1-2.26-8.49-7.21-8.75-12.78-.13-5.4,3.03-10.33,7.99-12.47Z" />
+                <path class="cls-1"
+                  d="M118.83,39.1V5.36C118.83,1.64,120.16-.07,122.83,0s3.84,1.67,3.85,5.21c0,9.25-.06,18.5,.06,27.75,0,2-.63,2.86-2.49,3.45-1.87,.76-3.68,1.66-5.42,2.69Z" />
+                <path class="cls-1"
+                  d="M138.21,35.28h-7.69c0-2.69-.41-5.4,.16-7.88,.6-1.61,1.92-2.86,3.56-3.38,2.11-.52,3.73,1.09,3.92,3.32,.22,2.51,.05,5.06,.05,7.94Z" />
+                <path class="cls-1"
+                  d="M149.75,36l-7.58-.9c0-2.45-.05-4.89,0-7.32s1.43-3.88,3.81-3.89c1.89-.17,3.56,1.21,3.73,3.1,.02,.17,.02,.35,0,.52,.1,2.76,.03,5.51,.03,8.49Z" />
+                <path class="cls-1"
+                  d="M249.15,150.58h-19.06c-7-.04-12.66-5.71-12.7-12.71h6.35c0,3.51,2.84,6.35,6.35,6.36h19.06c3.51-.14,6.24-3.1,6.1-6.61-.13-3.31-2.79-5.97-6.1-6.1h-19.06c-7.02-.2-12.55-6.04-12.35-13.06,.19-6.74,5.61-12.16,12.35-12.35h19.06c6.96,.13,12.57,5.74,12.7,12.7h-6.35c-.01-3.5-2.85-6.34-6.35-6.35h-19.06c-3.51,.14-6.24,3.1-6.1,6.61,.13,3.31,2.79,5.97,6.1,6.1h19.06c7.02,.2,12.55,6.04,12.35,13.06-.19,6.74-5.61,12.16-12.35,12.35h0Z" />
+                <path class="cls-1"
+                  d="M312.05,150.58h-6.35v-12.71h-31.77v12.71h-6.35v-31.77c.06-7,5.72-12.66,12.72-12.71h19c6.95,.15,12.55,5.75,12.71,12.7l.04,31.78Zm-31.75-38.12c-3.51,0-6.35,2.84-6.36,6.35v12.71h31.76v-12.71c-.01-3.51-2.85-6.34-6.36-6.35h-19.04Z" />
+                <path class="cls-1"
+                  d="M362.88,150.58h-6.36l-31.76-34.18v34.18h-6.35v-44.48h6.35l31.76,33.67v-33.67h6.36v44.48Z" />
+                <path class="cls-1"
+                  d="M413.7,137.87c-.06,6.99-5.71,12.64-12.7,12.71h-31.76v-44.48h31.76c6.96,.13,12.57,5.74,12.7,12.7v19.07Zm-6.35-19.06c-.01-3.5-2.85-6.34-6.35-6.35h-25.41v31.77h25.41c3.51-.01,6.34-2.85,6.35-6.36v-19.06Z" />
+                <path class="cls-1" d="M425.78,144.23h38.12v6.35h-44.47v-44.48h6.35v38.13Z" />
+                <path class="cls-1"
+                  d="M473.43,125.17h31.76v6.35h-31.76v12.71h38.12v6.35h-44.47v-44.48h44.47v6.35h-38.12v12.72Z" />
+                <path class="cls-1"
+                  d="M556.59,150.58l-12.7-12.71h-20.9v12.71h-6.35v-44.48h31.76c6.97,.11,12.59,5.73,12.7,12.7v6.36c-.05,5.49-3.59,10.35-8.8,12.08l8.8,8.86v4.51l-4.51-.03Zm-1.84-31.77c-.01-3.5-2.85-6.34-6.35-6.35h-25.41v19.06h25.41c3.5-.01,6.34-2.85,6.35-6.35v-6.36Z" />
+                <path class="cls-1"
+                  d="M257.98,226.82l-12.68-12.72h-20.9v12.71h-6.36v-44.46h31.76c6.98,.12,12.6,5.77,12.69,12.75v6.35c-.06,5.5-3.61,10.35-8.83,12.07l8.83,8.83v4.51l-4.51-.04Zm-1.84-31.72c-.01-3.51-2.85-6.34-6.36-6.35h-25.4v19h25.4c3.51,0,6.35-2.84,6.36-6.35v-6.3Z" />
+                <path class="cls-1"
+                  d="M312.05,214.1c-.02,7.03-5.72,12.72-12.75,12.72h-19c-6.99,.03-12.69-5.61-12.72-12.6,0-.04,0-.08,0-.12v-19c0-7.03,5.69-12.73,12.72-12.75h19c6.99,.13,12.62,5.76,12.75,12.75v19Zm-6.35-19c-.01-3.51-2.85-6.34-6.36-6.35h-19.04c-3.51,0-6.35,2.84-6.36,6.35v19c.01,3.51,2.85,6.35,6.36,6.36h19c3.52,.01,6.39-2.84,6.4-6.36h0v-19Z" />
+                <path class="cls-1"
+                  d="M348.9,182.35c6.97,.15,12.58,5.78,12.71,12.75h-6.31c-.01-3.5-2.85-6.34-6.35-6.35h-19.11c-3.5,.01-6.34,2.85-6.35,6.35v19c0,3.51,2.84,6.35,6.35,6.36h19.06c3.52,.02,6.38-2.82,6.4-6.34,0,0,0-.01,0-.02h6.36c-.07,6.99-5.72,12.64-12.71,12.71h-19.11c-7.01-.02-12.68-5.7-12.7-12.71v-19c.09-6.98,5.72-12.62,12.7-12.71l19.06-.04Z" />
+                <path class="cls-1"
+                  d="M388.93,204.59l22.23,22.23h-8.95l-19.06-19.06h-10.1v19.06h-6.35v-44.47h6.35v19.06h10.1l19.06-19.06h8.95l-22.23,22.24Z" />
+                <path class="cls-1"
+                  d="M470.89,226.82h-19.06c-7-.04-12.67-5.72-12.7-12.72h6.35c0,3.51,2.84,6.35,6.35,6.36h19.06c3.51-.14,6.24-3.1,6.1-6.61-.13-3.31-2.79-5.97-6.1-6.1h-19.06c-7.02-.2-12.55-6.04-12.35-13.06,.19-6.74,5.61-12.16,12.35-12.35h19.06c6.97,.16,12.57,5.79,12.7,12.76h-6.35c-.01-3.5-2.85-6.34-6.35-6.35h-19.06c-3.51,0-6.35,2.84-6.35,6.35,0,3.51,2.84,6.35,6.35,6.35h19.07c7.02,.2,12.55,6.04,12.35,13.06-.19,6.74-5.61,12.16-12.35,12.35v-.04Z" />
+                <path class="cls-1"
+                  d="M520.45,182.35c6.97,.16,12.57,5.78,12.7,12.75h-6.35c-.01-3.5-2.85-6.34-6.35-6.35h-19.06c-3.5,.01-6.34,2.85-6.35,6.35v19c0,3.51,2.84,6.35,6.35,6.36h19.06c3.51-.01,6.34-2.85,6.35-6.36h6.35c-.06,6.99-5.71,12.64-12.7,12.71h-19.06c-7.01-.02-12.69-5.7-12.71-12.71v-19c.09-6.98,5.73-12.62,12.71-12.71l19.06-.04Z" />
+                <path class="cls-1"
+                  d="M544.59,201.41h31.77v-19.06h6.35v44.47h-6.35v-19.06h-31.77v19.06h-6.35v-44.47h6.35v19.06Z" />
+                <path class="cls-1"
+                  d="M632.9,214.1c-.02,7.01-5.69,12.68-12.7,12.71h-19.06c-6.99,.03-12.68-5.62-12.71-12.61,0-.03,0-.07,0-.1v-19c.02-7.01,5.7-12.69,12.71-12.71h19.06c6.95,.16,12.55,5.76,12.7,12.71v19Zm-6.35-19c-.01-3.5-2.85-6.34-6.35-6.35h-19.06c-3.5,.01-6.34,2.85-6.35,6.35v19c0,3.51,2.84,6.35,6.35,6.36h19.06c3.51-.01,6.34-2.85,6.35-6.36v-19Z" />
+                <path class="cls-1"
+                  d="M682.46,214.1c-.02,7.01-5.7,12.69-12.71,12.71h-19.05c-6.99,.03-12.68-5.62-12.71-12.61,0-.03,0-.07,0-.1v-19c.02-7.01,5.7-12.69,12.71-12.71h19.05c6.95,.15,12.56,5.76,12.71,12.71v19Zm-6.35-19c-.01-3.51-2.85-6.34-6.36-6.35h-19.05c-3.52-.02-6.38,2.82-6.4,6.34,0,0,0,0,0,.01v19c.01,3.51,2.85,6.35,6.36,6.36h19.05c3.51-.01,6.35-2.85,6.36-6.36l.04-19Z" />
+                <path class="cls-1" d="M694.54,220.47h38.11v6.35h-44.46v-44.47h6.35v38.12Z" />
+              </g>
+            </svg>
+          </a>
         </div>
 
         <nav class="footer__menu">
@@ -458,35 +610,14 @@
           </ul>
         </nav>
 
-        <div class="footer__icons-container">
-          <ul class="icon-container">
-            <li>
-              <a class="whatsapp" href="https://wa.me/79258004683" target="_blank">
-                <img src="./assets/icons/whatsapp.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a class="telegram" href="https://t.me/sandlerrockschool" target="_blank">
-                <img src="./assets/icons/telegram.png" alt="">
-              </a>
-            </li>
-          </ul>
-          <div class="black-button"><a href="/#take-a-lesson">Обратный звонок</a></div>
+        <div class="contacts-container">
+          <div class="white-button glowingWhite"><a href="/#take-a-lesson">Обратный звонок</a></div>
+          <div class="footer__contacts">
+            <div class="number"><a href="tel:+74997558600">8 (499) 755 86 00</a></div>
+            <address>г. Москва, Потаповский пер. 3с1</address>
+          </div>
         </div>
 
-        <p>Фонд поддержки одаренных детей и молодежи Игоря Сандлера
-          <!-- <br> -->
-          ИНН 7719290541; КПП771901001; ОГРН 1137799010030
-          <!-- <br> -->
-          Юридический адрес: 105203, г. Москва, ул. Первомайская,
-          <!-- <br> -->
-          д. 109/2, кв. 17
-        </p>
-
-        <div class="footer__contacts">
-          <div class="number"><a href="tel:+74997558600">8 (499) 755 86 00</a></div>
-          <address>г. Москва, Потаповский пер. 3с1</address>
-        </div>
       </div>
     </div>
   </footer>

@@ -378,6 +378,9 @@ p {
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;
 }
+.who-we-are .wrapper {
+  padding-bottom: 0;
+}
 .who-we-are .container__top {
   display: grid;
 }
@@ -451,6 +454,14 @@ p {
 .who-we-are .container__bottom .container__bottom__img-container {
   grid-column-start: 1;
   grid-column-end: 2;
+}
+.who-we-are .container__bottom .container__bottom__img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  bottom: -0.4vw;
 }
 .who-we-are .container__bottom .container__bottom__text-container h1 {
   font-size: 3.5vw;
@@ -602,30 +613,39 @@ p {
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;
 }
-.unique-project h1 {
-  padding-bottom: 5vw;
+.unique-project .unique-project__container {
+  padding-top: 3vw;
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  grid-template-rows: repeat(auto);
+  gap: 2vw;
 }
-.unique-project .unique-project__text-container-top {
-  padding-bottom: 5vw;
+.unique-project .unique-project__container .text-container {
+  display: grid;
+  gap: 1vw;
 }
-.unique-project .unique-project__text-container-top p {
-  font-size: 1.89vw;
+.unique-project .unique-project__container p {
+  font-size: 1.8vw;
 }
-.unique-project .unique-project__text-container-middle {
-  padding-bottom: 5vw;
-  display: flex;
-  justify-content: flex-end;
+.unique-project .unique-project__container .img-container {
+  display: grid;
+  align-items: center;
+  height: 100%;
 }
-.unique-project .unique-project__text-container-middle p {
-  font-size: 1.89vw;
+.unique-project .unique-project__container .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.unique-project .unique-project__text-container-bottom {
-  padding-bottom: 5vw;
+.unique-project .unique-project__container-bottom {
+  padding-top: 3vw;
 }
-.unique-project .unique-project__text-container-bottom p {
+.unique-project .unique-project__container-bottom p {
   font-size: 1.89vw;
 }
 .unique-project .unique-project__button-container {
+  padding-top: 3vw;
   display: flex;
   justify-content: center;
 }
@@ -756,6 +776,15 @@ p {
   display: flex;
   justify-content: center;
 }
+.our-teachers .swiper-1 .swiper-button-next {
+  color: var(--red);
+}
+.our-teachers .swiper-1 .swiper-button-prev {
+  color: var(--red);
+}
+.our-teachers .swiper-1 .swiper-pagination-bullet-active {
+  background-color: var(--red);
+}
 .our-teachers .swiper-slide {
   width: 100%;
   display: flex;
@@ -824,6 +853,18 @@ p {
   height: 100%;
   display: flex;
   justify-content: center;
+}
+.students-pics .swiper-2 .swiper-button-next {
+  color: var(--red);
+}
+.students-pics .swiper-2 .swiper-button-prev {
+  color: var(--red);
+}
+.students-pics .swiper-2 .swiper-pagination {
+  color: var(--red);
+}
+.students-pics .swiper-2 .swiper-pagination-bullet-active {
+  background-color: var(--red);
 }
 .students-pics .swiper-slide {
   display: flex;

@@ -115,7 +115,7 @@ p {
 }
 .master-class {
   background-image: url("../assets/background/main-first-section-bg.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -189,6 +189,10 @@ p {
 .master-class .header .contacts-container .header__contacts .number a {
   color: white;
   font-size: 1.5vw;
+  transition: 0.5s;
+}
+.master-class .header .contacts-container .header__contacts .number:hover a {
+  color: var(--red);
 }
 .master-class .header .contacts-container .header__contacts address {
   display: flex;
@@ -272,6 +276,8 @@ p {
   color: var(--red);
   cursor: pointer;
   transition: 0.4s;
+  width: 100%;
+  height: 100%;
 }
 .our-courses .our-courses__menu .our-courses__list .our-courses__item:hover {
   transform: translateY(-5px);
@@ -288,7 +294,6 @@ p {
 .our-courses .our-courses__content .our-courses__card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-row: auto;
   gap: 0.5vw;
   justify-content: flex-start;
   align-items: center;
@@ -309,6 +314,8 @@ p {
   align-items: center;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .our-courses .our-courses__content .our-courses__card-list .card:hover .card__img-container img {
   transform: scale(1.2);
@@ -321,6 +328,8 @@ p {
   height: 100%;
 }
 .our-courses .our-courses__content .our-courses__card-list .card .card__img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: 0.5s;
 }
 .our-courses .our-courses__content .our-courses__card-list .card .card-container {
@@ -331,6 +340,9 @@ p {
   left: 0;
   transition: 0.5s;
   background-color: rgba(0, 0, 0, 0.2);
+  display: grid;
+  justify-content: center;
+  align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -616,7 +628,7 @@ p {
 .unique-project .unique-project__container {
   padding-top: 3vw;
   display: grid;
-  grid-template-columns: repeat(2, 0.5fr);
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(auto);
   gap: 2vw;
 }
@@ -886,8 +898,6 @@ p {
 }
 
 .wrapper {
-  height: 100%;
-  width: 100vw;
   padding: 2vw 5vw;
 }
 
@@ -950,8 +960,7 @@ p {
   justify-content: center;
   align-items: center;
   transform: translate(0, 0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: 0.5s;
 }
 .black-button a:link,

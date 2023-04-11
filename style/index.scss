@@ -160,7 +160,7 @@ p {
 
 .master-class {
   background-image: url('../assets/background/main-first-section-bg.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
@@ -255,10 +255,17 @@ p {
         .number {
           display: flex;
           justify-content: center;
-
+          
           a {
             color: white;
             font-size: 1.5vw;
+            transition: .5s;
+          }
+
+          &:hover {
+            a {
+              color: var(--red);
+            }
           }
         }
 
@@ -378,6 +385,9 @@ p {
         cursor: pointer;
         transition: .4s;
 
+        width: 100%;
+        height: 100%;
+
         &:hover {
           transform: translateY(-5px);
           background-color: var(--red);
@@ -399,7 +409,7 @@ p {
       display: grid;
 
       grid-template-columns: repeat(3, 1fr);
-      grid-row: auto;
+      // grid-row: auto;
       gap: 0.5vw;
 
       @media screen and (max-width: 786px) {
@@ -422,6 +432,9 @@ p {
         position: relative;
         overflow: hidden;
 
+        width: 100%;
+        height: 100%;
+
         &:hover .card__img-container img {
           transform: scale(1.2);
         }
@@ -435,6 +448,7 @@ p {
           height: 100%;
 
           img {
+            object-fit: cover;
             transition: .5s;
           }
         }
@@ -450,6 +464,11 @@ p {
           transition: .5s;
 
           background-color: rgba($color: #000000, $alpha: 0.2);
+
+
+          display: grid;
+          justify-content: center;
+          align-items: center;
 
           display: flex;
           justify-content: center;
@@ -823,7 +842,7 @@ p {
   .unique-project__container {
     padding-top: 3vw;
     display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(auto);
     gap: 2vw;
 
@@ -918,8 +937,8 @@ p {
       align-items: center;
       // position: relative;
       overflow: hidden;
-      
-      
+
+
       iframe {
         border: none;
         width: 100%;
@@ -1174,6 +1193,7 @@ p {
     .swiper-pagination {
       color: var(--red);
     }
+
     .swiper-pagination-bullet-active {
       background-color: var(--red);
     }
@@ -1200,8 +1220,8 @@ p {
 }
 
 .wrapper {
-  height: 100%;
-  width: 100vw;
+  // height: 100%;
+  // width: 100vw;
   padding: 2vw 5vw;
 
 }

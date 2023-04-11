@@ -19,10 +19,6 @@
   }
 }
 
-html {
-  animation: opacityFromZeroToOne 1s forwards;
-}
-
 li {
   a {
     font-size: 1.5rem;
@@ -177,7 +173,7 @@ p {
   background-image: url('../assets/background/main-first-section-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  // background-attachment: fixed;
 
   .header {
 
@@ -419,7 +415,7 @@ p {
 
       grid-template-columns: repeat(3, 1fr);
       // grid-row: auto;
-      gap: 0.5vw;
+      gap: $gap;
 
       @media screen and (max-width: 786px) {
         grid-template-columns: repeat(2, 1fr);

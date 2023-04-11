@@ -16,10 +16,6 @@
   }
 }
 
-html {
-  animation: opacityFromZeroToOne 1s forwards;
-}
-
 li a {
   font-size: 1.5rem;
 }
@@ -125,7 +121,6 @@ p {
   background-image: url("../assets/background/main-first-section-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 .master-class .header {
   animation: opacityFromZeroToOne 2s forwards;
@@ -296,7 +291,7 @@ p {
 .our-courses .our-courses__content .our-courses__card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5vw;
+  gap: 5px;
   justify-content: flex-start;
   align-items: center;
 }

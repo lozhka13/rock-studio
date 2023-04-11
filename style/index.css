@@ -1135,4 +1135,50 @@ h3 {
   color: white;
   font-style: normal;
   font-size: 0.75vw;
+}
+
+.reviews-page {
+  background-image: url("../assets/background/main-first-section-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.reviews-page h1 {
+  padding-top: 4vw;
+}
+.reviews-page .review__content {
+  padding-top: 2vw;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 3vw;
+}
+.reviews-page .review__content .img-container {
+  display: grid;
+  align-items: center;
+}
+.reviews-page .review__content .text-container {
+  padding-top: 4vw;
+  color: white;
+}
+.reviews-page .review__content .text-container .info-text {
+  width: 80%;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  position: relative;
+}
+.reviews-page .review__content .text-container .info-text::before {
+  content: "«";
+  position: absolute;
+  top: -4vw;
+  left: 0vw;
+  font-size: 2vw;
+  color: #A30000;
+  font-family: "Bicubik";
+}
+.reviews-page .review__content .text-container .review__quote {
+  padding-top: 2vw;
+  font-size: 2vw;
+  font-family: "Bicubik";
+  line-height: 2.5vw;
 }/*# sourceMappingURL=index.css.map */

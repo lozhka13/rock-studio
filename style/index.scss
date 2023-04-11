@@ -1517,3 +1517,63 @@ h3 {
     }
   }
 }
+
+
+.reviews-page {
+  background-image: url('../assets/background/main-first-section-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+  h1 {
+    padding-top: 4vw;
+  }
+
+  .review__content {
+    padding-top: 2vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3vw;
+
+
+    .img-container {
+      display: grid;
+      align-items: center;
+
+      img {
+        // max-width: 100%;
+      }
+    }
+
+    .text-container {
+      padding-top: 4vw;
+      color: white;
+
+      .info-text {
+        width: 80%;
+        font-size: 1.5vw;
+        line-height: 2vw;
+        position: relative;
+
+        &::before {
+          content: '«';
+          position: absolute;
+          top: -4vw;
+          left: 0vw;
+          font-size: 2vw;
+          color: $red;
+          font-family: 'Bicubik';
+        }
+      }
+
+      .review__quote {
+        padding-top: 2vw;
+        font-size: 2vw;
+        font-family: 'Bicubik';
+        line-height: 2.5vw;
+      }
+    }
+  }
+}

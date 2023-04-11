@@ -8,7 +8,7 @@
 }
 
 :root {
-  // font-size: 16px;
+  font-size: 16px;
 
   @media screen and (max-width: 962px) {
     font-size: 12px;
@@ -19,9 +19,13 @@
   }
 }
 
+html {
+  animation: opacityFromZeroToOne 1s forwards;
+}
+
 li {
   a {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -51,7 +55,7 @@ p {
 }
 
 .h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: 'Bicubik';
 }
 
@@ -173,7 +177,7 @@ p {
   background-image: url('../assets/background/main-first-section-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  // background-attachment: fixed;
+  background-attachment: fixed;
 
   .header {
 
@@ -415,7 +419,7 @@ p {
 
       grid-template-columns: repeat(3, 1fr);
       // grid-row: auto;
-      gap: $gap;
+      gap: 0.5vw;
 
       @media screen and (max-width: 786px) {
         grid-template-columns: repeat(2, 1fr);

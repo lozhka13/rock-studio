@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import './reset.css';
+@import './variables.scss';
 
 @font-face {
   font-family: 'Bicubik';
@@ -7,16 +8,32 @@
 }
 
 :root {
-  --swiper-theme-color: var(--red);
-  --red: #A30000;
+  // font-size: 16px;
+
+  @media screen and (max-width: 962px) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+  }
 }
 
 html {
   animation: opacityFromZeroToOne 1s forwards;
 }
 
-* a {
-  color: inherit;
+li {
+  a {
+    font-size: 1.5rem;
+  }
+}
+
+* {
+  a {
+    color: inherit;
+    font-size: 1rem;
+  }
 }
 
 * {
@@ -28,20 +45,18 @@ html {
   text-decoration: none;
 }
 
-h1 {
-  font-family: Bicubik;
-  font-size: 3.5vw;
-}
-
 h2 {
-  font-size: 2.6vw;
-  font-weight: bold;
-  color: white;
+  font-size: 2rem;
 }
 
 p {
-  font-size: 1.5vw;
-  font-weight: 300;
+  font-size: 1.5rem;
+  // font-weight: 300;
+}
+
+.h1 {
+  font-size: 3rem;
+  font-family: 'Bicubik';
 }
 
 // @keyframes shake {
@@ -76,15 +91,15 @@ p {
 
 @keyframes glowingRed {
   0% {
-    box-shadow: 0 0 0.5vw var(--red);
+    box-shadow: 0 0 0.5vw $red;
   }
 
   50% {
-    box-shadow: 0 0 1vw var(--red);
+    box-shadow: 0 0 1vw $red;
   }
 
   100% {
-    box-shadow: 0 0 0.5vw var(--red);
+    box-shadow: 0 0 0.5vw $red;
   }
 }
 
@@ -184,7 +199,7 @@ p {
         }
 
         &:hover a .cls-1 {
-          fill: var(--red);
+          fill: $red;
         }
 
       }
@@ -208,7 +223,7 @@ p {
           position: relative;
 
           a {
-            font-size: 1.5vw;
+            // font-size: 1.5em;
             color: white;
 
             transition: .5s;
@@ -230,13 +245,13 @@ p {
           &:hover {
 
             a {
-              color: var(--red);
+              color: $red;
             }
 
             &::before {
               width: 100%;
               height: 1px;
-              background-color: var(--red);
+              background-color: $red;
             }
           }
         }
@@ -255,16 +270,16 @@ p {
         .number {
           display: flex;
           justify-content: center;
-          
+
           a {
             color: white;
-            font-size: 1.5vw;
+            // font-size: 1.5vw;
             transition: .5s;
           }
 
           &:hover {
             a {
-              color: var(--red);
+              color: $red;
             }
           }
         }
@@ -287,12 +302,6 @@ p {
 
     display: grid;
     align-items: center;
-
-    h1 {
-      pointer-events: none;
-      color: white;
-    }
-
 
 
     .master-class__content__text-container {
@@ -349,7 +358,7 @@ p {
             }
 
             & .cls-1 {
-              fill: var(--red);
+              fill: $red;
             }
           }
         }
@@ -376,11 +385,11 @@ p {
         align-items: center;
         flex-wrap: wrap;
 
-        border-bottom: .16vw solid var(--red);
+        border-bottom: .16vw solid $red;
         background-color: white;
 
         font-size: 1.5vw;
-        color: var(--red);
+        color: $red;
 
         cursor: pointer;
         transition: .4s;
@@ -390,13 +399,13 @@ p {
 
         &:hover {
           transform: translateY(-5px);
-          background-color: var(--red);
+          background-color: $red;
           color: white;
         }
       }
 
       .selected {
-        background-color: var(--red);
+        background-color: $red;
         color: white;
       }
     }
@@ -478,15 +487,6 @@ p {
           flex-direction: column;
           gap: 1vw;
 
-          h2 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            flex-wrap: wrap;
-
-            font-size: 2vw;
-          }
 
           &:hover {
             background-color: rgba($color: #000000, $alpha: 0.6);
@@ -496,7 +496,7 @@ p {
 
             padding: 0.5vw 1vw;
 
-            background-color: var(--red);
+            background-color: $red;
 
             display: flex;
             justify-content: center;
@@ -513,7 +513,7 @@ p {
 
             &:hover {
               background-color: white;
-              color: var(--red);
+              color: $red;
             }
           }
         }
@@ -538,144 +538,142 @@ p {
 
   .wrapper {
     padding-bottom: 0;
-  }
 
-
-  .container__top {
-    display: grid;
-
-    .who-we-are__container-top {
+    .container__top {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2vw;
 
-      &__left {
-        padding-top: 2vw;
+      .who-we-are__container-top {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
 
-        grid-template-areas:
-          "a a"
-          "b c";
+        &__left {
+          padding-top: 2vw;
+          display: grid;
+          grid-template-columns: auto auto;
+
+          grid-template-areas:
+            "a a"
+            "b c";
 
 
-        .star {
-          padding-left: 6vw;
+          .star {
+            padding-left: 6vw;
+            position: relative;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            font-size: 1.5vw;
+
+            &::first-line {
+              font-weight: 700;
+            }
+
+            &::before {
+              content: '*';
+              position: absolute;
+              top: 30%;
+              left: 0vw;
+              font-size: 5vw;
+              color: black;
+              font-family: 'Bicubik';
+            }
+          }
+
+          p {
+            font-size: 1.5vw;
+            color: white;
+          }
+
+          .facts-container {
+            padding-top: 2vw;
+
+            .facts {
+              padding-top: 2vw;
+
+              p {
+                padding-left: 2vw;
+                display: flex;
+              }
+            }
+          }
+        }
+
+        &__right {
+          display: grid;
+          width: 100%;
+          height: 100%;
           position: relative;
-          color: white;
-          grid-column-start: 1;
-          grid-column-end: 3;
-          font-size: 1.5vw;
 
-          &::first-line {
-            font-weight: 700;
+          .sandler-img-text {
+            // position: absolute;
+            // bottom: 1vw;
+            // left: -10vw;
           }
 
           &::before {
-            content: '*';
+            background-image: url('../assets/sandler-text.png');
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+          }
+        }
+      }
+
+    }
+
+
+
+    .container__bottom {
+      display: grid;
+
+      grid-template-columns: 0.5fr 0.5fr;
+      align-items: center;
+
+      &__img-container {
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: relative;
+          bottom: -.4vw;
+        }
+      }
+
+      &__text-container {
+
+
+        h1 {
+          position: relative;
+
+          span {
+            font-family: 'Bicubik';
+            color: black;
+          }
+
+
+          &::before {
+            content: '«';
             position: absolute;
-            top: 30%;
+            top: -6vw;
             left: 0vw;
             font-size: 5vw;
             color: black;
             font-family: 'Bicubik';
           }
-        }
 
-        p {
-          font-size: 1.5vw;
-          color: white;
-        }
-
-        .facts-container {
-          padding-top: 2vw;
-
-          .facts {
-            padding-top: 2vw;
-
-            p {
-              padding-left: 2vw;
-              display: flex;
-            }
+          &:after {
+            content: '– Игорь Борисович Сандлер';
+            font-family: 'Montserrat';
+            font-size: 1.25vw;
+            font-weight: 300;
+            position: absolute;
+            bottom: -2vw;
+            right: -1vw;
           }
-        }
-      }
-
-      &__right {
-        display: grid;
-        width: 100%;
-        height: 100%;
-        position: relative;
-
-        .sandler-img-text {
-          // position: absolute;
-          // bottom: 1vw;
-          // left: -10vw;
-        }
-
-        &::before {
-          background-image: url('../assets/sandler-text.png');
-          // position: absolute;
-          // top: 0;
-          // left: 0;
-        }
-      }
-    }
-
-  }
-
-
-
-  .container__bottom {
-    display: grid;
-
-    grid-template-columns: 0.5fr 0.5fr;
-    align-items: center;
-
-    .container__bottom__img-container {
-      grid-column-start: 1;
-      grid-column-end: 2;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: relative;
-        bottom: -.4vw;
-      }
-    }
-
-    .container__bottom__text-container {
-
-
-      h1 {
-        font-size: 3.5vw;
-        position: relative;
-
-        span {
-          font-family: 'Bicubik';
-          color: black;
-        }
-
-
-        &::before {
-          content: '«';
-          position: absolute;
-          top: -6vw;
-          left: 0vw;
-          font-size: 5vw;
-          color: black;
-          font-family: 'Bicubik';
-        }
-
-        &:after {
-          content: '– Игорь Борисович Сандлер';
-          font-family: 'Montserrat';
-          font-size: 1.25vw;
-          font-weight: 300;
-          position: absolute;
-          bottom: -2vw;
-          right: -1vw;
         }
       }
     }
@@ -768,14 +766,9 @@ p {
 }
 
 .review {
-
   background: linear-gradient(-45deg, #710f0f, #A30000, #710f0f, #A30000, #710f0f, #A30000);
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;
-
-  // h1 {
-  //   padding-bottom: 2vw;
-  // }
 
   .review__content {
     padding-top: 2vw;
@@ -917,7 +910,7 @@ p {
         .contacts__number {
 
           a {
-            font-size: 1.8vw;
+            // font-size: 1.8vw;
           }
         }
 
@@ -994,7 +987,7 @@ p {
         position: relative;
 
         a {
-          font-size: 1.5vw;
+          // font-size: 1.5vw;
           color: white;
 
           transition: .5s;
@@ -1044,7 +1037,7 @@ p {
 
         a {
           color: white;
-          font-size: 1.5vw;
+          // font-size: 1.5vw;
         }
       }
 
@@ -1073,15 +1066,15 @@ p {
     justify-content: center;
 
     .swiper-button-next {
-      color: var(--red);
+      color: $red;
     }
 
     .swiper-button-prev {
-      color: var(--red);
+      color: $red;
     }
 
     .swiper-pagination-bullet-active {
-      background-color: var(--red);
+      background-color: $red;
     }
   }
 
@@ -1183,36 +1176,47 @@ p {
     height: 100%;
     display: flex;
     justify-content: center;
-
-    .swiper-button-next {
-      color: var(--red);
-    }
-
-    .swiper-button-prev {
-      color: var(--red);
-    }
-
-    .swiper-pagination {
-      color: var(--red);
-    }
-
-    .swiper-pagination-bullet-active {
-      background-color: var(--red);
-    }
-  }
-
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
     align-items: center;
   }
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  //   .swiper-wrapper {
+  //     overflow: hidden;
+  //     width: 80%;
+  //   }
+
+  //   .swiper-button-next {
+  //     color: $red;
+  //   }
+
+  //   .swiper-button-prev {
+  //     color: $red;
+  //   }
+
+  //   .swiper-pagination {
+  //     color: $red;
+  //   }
+
+  //   .swiper-pagination-bullet-active {
+  //     background-color: $red;
+  //   }
+  // }
+
+  // .swiper-slide {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   width: 80%;
+  // }
+
+  // .swiper-slide img {
+  //   display: block;
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
 
   .button-container {
     padding-top: 2vw;
@@ -1222,22 +1226,18 @@ p {
 }
 
 .wrapper {
-  height: 100%;
-  width: 100%;
   padding: 2vw 5vw;
-
 }
 
 .blackout {
   animation: blackout 3s forwards;
 }
 
-
 .white-button {
   padding: 0.75vw 1.6875vw;
 
   background-color: white;
-  border: 1px solid var(--red);
+  border: 1px solid $red;
   // border-radius: 6.66vw;
 
   display: flex;
@@ -1248,13 +1248,13 @@ p {
 
   a:link,
   a:visited {
-    color: var(--red);
+    color: $red;
     font-size: 1.5vw;
     font-weight: 300;
   }
 
   &:hover {
-    background-color: var(--red);
+    background-color: $red;
     border: 1px solid white;
 
     a:link,
@@ -1267,8 +1267,8 @@ p {
 .red-button {
   padding: 0.75vw 1.6875vw;
 
-  background-color: var(--red);
-  border: 1px solid var(--red);
+  background-color: $red;
+  border: 1px solid $red;
 
   display: flex;
   justify-content: center;
@@ -1285,11 +1285,11 @@ p {
 
   &:hover {
     background-color: white;
-    border: 1px solid var(--red);
+    border: 1px solid $red;
 
     a:link,
     a:visited {
-      color: var(--red);
+      color: $red;
     }
   }
 }
@@ -1349,11 +1349,11 @@ p {
 
   &:hover {
     background-color: white;
-    border: 1px solid var(--red);
+    border: 1px solid $red;
 
     a:link,
     a:visited {
-      color: var(--red);
+      color: $red;
     }
   }
 }
@@ -1408,4 +1408,12 @@ p {
 
 .opacityZero {
   opacity: 0;
+}
+
+.df-fw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
 }

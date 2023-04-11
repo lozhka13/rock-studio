@@ -99,9 +99,9 @@ const swiper = new Swiper('.swiper-1', {
 });
 
 var swiper1 = new Swiper(".swiper-2", {
-  slidesPerView: 3,
+  slidesPerView: 2,
 
-  spaceBetween: 15,
+  spaceBetween: 30,
   centeredSlides: false,
   pagination: {
     el: ".swiper-pagination",

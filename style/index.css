@@ -5,17 +5,28 @@
   font-family: "Bicubik";
   src: url("../assets/fonts/Bicubik/Bicubik.OTF");
 }
-:root {
-  --swiper-theme-color: var(--red);
-  --red: #A30000;
+@media screen and (max-width: 962px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 10px;
+  }
 }
 
 html {
   animation: opacityFromZeroToOne 1s forwards;
 }
 
+li a {
+  font-size: 1.5rem;
+}
+
 * a {
   color: inherit;
+  font-size: 1rem;
 }
 
 * {
@@ -26,20 +37,17 @@ html {
   text-decoration: none;
 }
 
-h1 {
-  font-family: Bicubik;
-  font-size: 3.5vw;
-}
-
 h2 {
-  font-size: 2.6vw;
-  font-weight: bold;
-  color: white;
+  font-size: 2rem;
 }
 
 p {
-  font-size: 1.5vw;
-  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.h1 {
+  font-size: 3rem;
+  font-family: "Bicubik";
 }
 
 @keyframes blackout {
@@ -49,13 +57,13 @@ p {
 }
 @keyframes glowingRed {
   0% {
-    box-shadow: 0 0 0.5vw var(--red);
+    box-shadow: 0 0 0.5vw #A30000;
   }
   50% {
-    box-shadow: 0 0 1vw var(--red);
+    box-shadow: 0 0 1vw #A30000;
   }
   100% {
-    box-shadow: 0 0 0.5vw var(--red);
+    box-shadow: 0 0 0.5vw #A30000;
   }
 }
 @keyframes glowingWhite {
@@ -134,7 +142,7 @@ p {
   transition: 0.5s;
 }
 .master-class .header .header-container .header__logo-container:hover a .cls-1 {
-  fill: var(--red);
+  fill: #A30000;
 }
 .master-class .header .header__menu {
   display: grid;
@@ -153,7 +161,6 @@ p {
   position: relative;
 }
 .master-class .header .header__menu .header__list .header__item a {
-  font-size: 1.5vw;
   color: white;
   transition: 0.5s;
 }
@@ -168,12 +175,12 @@ p {
   transition: 0.5s;
 }
 .master-class .header .header__menu .header__list .header__item:hover a {
-  color: var(--red);
+  color: #A30000;
 }
 .master-class .header .header__menu .header__list .header__item:hover::before {
   width: 100%;
   height: 1px;
-  background-color: var(--red);
+  background-color: #A30000;
 }
 .master-class .header .contacts-container {
   display: grid;
@@ -188,11 +195,10 @@ p {
 }
 .master-class .header .contacts-container .header__contacts .number a {
   color: white;
-  font-size: 1.5vw;
   transition: 0.5s;
 }
 .master-class .header .contacts-container .header__contacts .number:hover a {
-  color: var(--red);
+  color: #A30000;
 }
 .master-class .header .contacts-container .header__contacts address {
   display: flex;
@@ -206,10 +212,6 @@ p {
   padding: 6vw 0vw 12vw;
   display: grid;
   align-items: center;
-}
-.master-class .master-class__content h1 {
-  pointer-events: none;
-  color: white;
 }
 .master-class .master-class__content .master-class__content__text-container {
   display: grid;
@@ -255,7 +257,7 @@ p {
   background-color: white;
 }
 .master-class .master-class__content .master-class__content__button-container .icon-container li:hover .cls-1 {
-  fill: var(--red);
+  fill: #A30000;
 }
 
 .our-courses .our-courses__menu .our-courses__list {
@@ -270,10 +272,10 @@ p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border-bottom: 0.16vw solid var(--red);
+  border-bottom: 0.16vw solid #A30000;
   background-color: white;
   font-size: 1.5vw;
-  color: var(--red);
+  color: #A30000;
   cursor: pointer;
   transition: 0.4s;
   width: 100%;
@@ -281,11 +283,11 @@ p {
 }
 .our-courses .our-courses__menu .our-courses__list .our-courses__item:hover {
   transform: translateY(-5px);
-  background-color: var(--red);
+  background-color: #A30000;
   color: white;
 }
 .our-courses .our-courses__menu .our-courses__list .selected {
-  background-color: var(--red);
+  background-color: #A30000;
   color: white;
 }
 .our-courses .our-courses__content {
@@ -351,20 +353,12 @@ p {
   flex-direction: column;
   gap: 1vw;
 }
-.our-courses .our-courses__content .our-courses__card-list .card .card-container h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
-  font-size: 2vw;
-}
 .our-courses .our-courses__content .our-courses__card-list .card .card-container:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
 .our-courses .our-courses__content .our-courses__card-list .card .card-container .more {
   padding: 0.5vw 1vw;
-  background-color: var(--red);
+  background-color: #A30000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,7 +370,7 @@ p {
 }
 .our-courses .our-courses__content .our-courses__card-list .card .card-container .more:hover {
   background-color: white;
-  color: var(--red);
+  color: #A30000;
 }
 
 .buttons-container {
@@ -395,21 +389,21 @@ p {
 .who-we-are .wrapper {
   padding-bottom: 0;
 }
-.who-we-are .container__top {
+.who-we-are .wrapper .container__top {
   display: grid;
 }
-.who-we-are .container__top .who-we-are__container-top {
+.who-we-are .wrapper .container__top .who-we-are__container-top {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2vw;
 }
-.who-we-are .container__top .who-we-are__container-top__left {
+.who-we-are .wrapper .container__top .who-we-are__container-top__left {
   padding-top: 2vw;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-areas: "a a" "b c";
 }
-.who-we-are .container__top .who-we-are__container-top__left .star {
+.who-we-are .wrapper .container__top .who-we-are__container-top__left .star {
   padding-left: 6vw;
   position: relative;
   color: white;
@@ -417,10 +411,10 @@ p {
   grid-column-end: 3;
   font-size: 1.5vw;
 }
-.who-we-are .container__top .who-we-are__container-top__left .star::first-line {
+.who-we-are .wrapper .container__top .who-we-are__container-top__left .star::first-line {
   font-weight: 700;
 }
-.who-we-are .container__top .who-we-are__container-top__left .star::before {
+.who-we-are .wrapper .container__top .who-we-are__container-top__left .star::before {
   content: "*";
   position: absolute;
   top: 30%;
@@ -429,39 +423,39 @@ p {
   color: black;
   font-family: "Bicubik";
 }
-.who-we-are .container__top .who-we-are__container-top__left p {
+.who-we-are .wrapper .container__top .who-we-are__container-top__left p {
   font-size: 1.5vw;
   color: white;
 }
-.who-we-are .container__top .who-we-are__container-top__left .facts-container {
+.who-we-are .wrapper .container__top .who-we-are__container-top__left .facts-container {
   padding-top: 2vw;
 }
-.who-we-are .container__top .who-we-are__container-top__left .facts-container .facts {
+.who-we-are .wrapper .container__top .who-we-are__container-top__left .facts-container .facts {
   padding-top: 2vw;
 }
-.who-we-are .container__top .who-we-are__container-top__left .facts-container .facts p {
+.who-we-are .wrapper .container__top .who-we-are__container-top__left .facts-container .facts p {
   padding-left: 2vw;
   display: flex;
 }
-.who-we-are .container__top .who-we-are__container-top__right {
+.who-we-are .wrapper .container__top .who-we-are__container-top__right {
   display: grid;
   width: 100%;
   height: 100%;
   position: relative;
 }
-.who-we-are .container__top .who-we-are__container-top__right::before {
+.who-we-are .wrapper .container__top .who-we-are__container-top__right::before {
   background-image: url("../assets/sandler-text.png");
 }
-.who-we-are .container__bottom {
+.who-we-are .wrapper .container__bottom {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
   align-items: center;
 }
-.who-we-are .container__bottom .container__bottom__img-container {
+.who-we-are .wrapper .container__bottom__img-container {
   grid-column-start: 1;
   grid-column-end: 2;
 }
-.who-we-are .container__bottom .container__bottom__img-container img {
+.who-we-are .wrapper .container__bottom__img-container img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -469,15 +463,14 @@ p {
   position: relative;
   bottom: -0.4vw;
 }
-.who-we-are .container__bottom .container__bottom__text-container h1 {
-  font-size: 3.5vw;
+.who-we-are .wrapper .container__bottom__text-container h1 {
   position: relative;
 }
-.who-we-are .container__bottom .container__bottom__text-container h1 span {
+.who-we-are .wrapper .container__bottom__text-container h1 span {
   font-family: "Bicubik";
   color: black;
 }
-.who-we-are .container__bottom .container__bottom__text-container h1::before {
+.who-we-are .wrapper .container__bottom__text-container h1::before {
   content: "«";
   position: absolute;
   top: -6vw;
@@ -486,7 +479,7 @@ p {
   color: black;
   font-family: "Bicubik";
 }
-.who-we-are .container__bottom .container__bottom__text-container h1:after {
+.who-we-are .wrapper .container__bottom__text-container h1:after {
   content: "– Игорь Борисович Сандлер";
   font-family: "Montserrat";
   font-size: 1.25vw;
@@ -671,9 +664,6 @@ p {
 .contacts .contacts__container .contacts__container-text .logo-container img {
   width: 14vw;
 }
-.contacts .contacts__container .contacts__container-text .contacts__contacts .contacts__number a {
-  font-size: 1.8vw;
-}
 .contacts .contacts__container .contacts__container-text .contacts__contacts address {
   font-style: normal;
   font-size: 0.9vw;
@@ -727,7 +717,6 @@ p {
   position: relative;
 }
 .footer .footer__menu .footer__list .footer__item a {
-  font-size: 1.5vw;
   color: white;
   transition: 0.5s;
 }
@@ -762,7 +751,6 @@ p {
 }
 .footer .contacts-container .footer__contacts .number a {
   color: white;
-  font-size: 1.5vw;
 }
 .footer .contacts-container .footer__contacts address {
   display: flex;
@@ -784,13 +772,13 @@ p {
   justify-content: center;
 }
 .our-teachers .swiper-1 .swiper-button-next {
-  color: var(--red);
+  color: #A30000;
 }
 .our-teachers .swiper-1 .swiper-button-prev {
-  color: var(--red);
+  color: #A30000;
 }
 .our-teachers .swiper-1 .swiper-pagination-bullet-active {
-  background-color: var(--red);
+  background-color: #A30000;
 }
 .our-teachers .swiper-slide {
   width: 100%;
@@ -860,30 +848,7 @@ p {
   height: 100%;
   display: flex;
   justify-content: center;
-}
-.students-pics .swiper-2 .swiper-button-next {
-  color: var(--red);
-}
-.students-pics .swiper-2 .swiper-button-prev {
-  color: var(--red);
-}
-.students-pics .swiper-2 .swiper-pagination {
-  color: var(--red);
-}
-.students-pics .swiper-2 .swiper-pagination-bullet-active {
-  background-color: var(--red);
-}
-.students-pics .swiper-slide {
-  display: flex;
-  justify-content: center;
   align-items: center;
-}
-.students-pics .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .students-pics .button-container {
   padding-top: 2vw;
@@ -892,8 +857,6 @@ p {
 }
 
 .wrapper {
-  height: 100%;
-  width: 100%;
   padding: 2vw 5vw;
 }
 
@@ -904,7 +867,7 @@ p {
 .white-button {
   padding: 0.75vw 1.6875vw;
   background-color: white;
-  border: 1px solid var(--red);
+  border: 1px solid #A30000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -912,12 +875,12 @@ p {
 }
 .white-button a:link,
 .white-button a:visited {
-  color: var(--red);
+  color: #A30000;
   font-size: 1.5vw;
   font-weight: 300;
 }
 .white-button:hover {
-  background-color: var(--red);
+  background-color: #A30000;
   border: 1px solid white;
 }
 .white-button:hover a:link,
@@ -927,8 +890,8 @@ p {
 
 .red-button {
   padding: 0.75vw 1.6875vw;
-  background-color: var(--red);
-  border: 1px solid var(--red);
+  background-color: #A30000;
+  border: 1px solid #A30000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -942,11 +905,11 @@ p {
 }
 .red-button:hover {
   background-color: white;
-  border: 1px solid var(--red);
+  border: 1px solid #A30000;
 }
 .red-button:hover a:link,
 .red-button:hover a:visited {
-  color: var(--red);
+  color: #A30000;
 }
 
 .black-button {
@@ -991,11 +954,11 @@ p {
 }
 .transparent-button:hover {
   background-color: white;
-  border: 1px solid var(--red);
+  border: 1px solid #A30000;
 }
 .transparent-button:hover a:link,
 .transparent-button:hover a:visited {
-  color: var(--red);
+  color: #A30000;
 }
 
 .whatsapp {
@@ -1044,4 +1007,12 @@ p {
 
 .opacityZero {
   opacity: 0;
+}
+
+.df-fw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=index.css.map */

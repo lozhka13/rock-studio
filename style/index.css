@@ -135,88 +135,6 @@ h3 {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.master-class .header {
-  animation: opacityFromZeroToOne 2s forwards;
-}
-.master-class .header .header-container {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 2.5vw;
-}
-.master-class .header .header-container .header__logo-container {
-  width: 14vw;
-}
-.master-class .header .header-container .header__logo-container a .cls-1 {
-  transition: 0.5s;
-}
-.master-class .header .header-container .header__logo-container:hover a .cls-1 {
-  fill: #A30000;
-}
-.master-class .header .header__menu {
-  display: grid;
-}
-.master-class .header .header__menu .header__list {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: repeat(5, auto);
-  gap: 2vw;
-  list-style-type: none;
-}
-.master-class .header .header__menu .header__list .header__item {
-  display: grid;
-  align-items: center;
-  position: relative;
-}
-.master-class .header .header__menu .header__list .header__item a {
-  color: white;
-  transition: 0.5s;
-}
-.master-class .header .header__menu .header__list .header__item::before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0px;
-  height: 1px;
-  background-color: white;
-  transition: 0.5s;
-}
-.master-class .header .header__menu .header__list .header__item:hover a {
-  color: #A30000;
-}
-.master-class .header .header__menu .header__list .header__item:hover::before {
-  width: 100%;
-  height: 1px;
-  background-color: #A30000;
-}
-.master-class .header .contacts-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5vw;
-}
-.master-class .header .contacts-container .header__contacts .number {
-  display: flex;
-  justify-content: center;
-}
-.master-class .header .contacts-container .header__contacts .number a {
-  color: white;
-  font-size: 1.5vw;
-  transition: 0.5s;
-}
-.master-class .header .contacts-container .header__contacts .number:hover a {
-  color: #A30000;
-}
-.master-class .header .contacts-container .header__contacts address {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-style: normal;
-  font-size: 0.75vw;
-}
 .master-class .master-class__content {
   padding: 6vw 0vw 12vw;
   display: grid;
@@ -382,7 +300,7 @@ h3 {
   color: #A30000;
 }
 
-.buttons-container {
+.button-container {
   padding-top: 3vw;
   display: flex;
   justify-content: center;
@@ -1073,4 +991,148 @@ h3 {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+}
+
+.teachers {
+  background-image: url("../assets/background/main-first-section-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.teachers__list {
+  padding-top: 4vw;
+}
+.teachers__list .teachers__container {
+  padding: 2vw 0vw;
+}
+.teachers__list .teachers__container .teachers__container__content {
+  padding-top: 2vw;
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+}
+.teachers__list .teachers__container .teachers__container__content .teachers__container__text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.teachers__list .teachers__container .teachers__container__content .teachers__container__text__name {
+  display: flex;
+}
+.teachers__list .teachers__container .teachers__container__content .teachers__container__text__specialization {
+  padding-left: 4vw;
+  position: relative;
+  display: grid;
+}
+.teachers__list .teachers__container .teachers__container__content .teachers__container__text__specialization:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "*";
+  color: red;
+  font-size: 4vw;
+  font-family: "Bicubik";
+}
+.teachers__list .teachers__container .teachers__container__content .teachers__container__text .teachers__container__text__info {
+  display: grid;
+  gap: 1vw;
+}
+.teachers__list .teachers__container .teachers__container__content .teachers__container__text .teachers__container__text__info .shutova__achievments {
+  display: grid;
+  gap: 1vw;
+  grid-template-columns: repeat(2, auto);
+  color: white;
+}
+.teachers__list .teachers__container .teachers__container__content .teachers__container__img-container {
+  align-items: flex-start;
+  display: grid;
+  width: 40%;
+}
+.teachers__list .teachers__container .teachers__container__content .teachers__container__img-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.header {
+  animation: opacityFromZeroToOne 2s forwards;
+}
+.header .header-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2.5vw;
+}
+.header .header-container .header__logo-container {
+  width: 14vw;
+}
+.header .header-container .header__logo-container a .cls-1 {
+  transition: 0.5s;
+}
+.header .header-container .header__logo-container:hover a .cls-1 {
+  fill: #A30000;
+}
+.header .header__menu {
+  display: grid;
+}
+.header .header__menu .header__list {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(5, auto);
+  gap: 2vw;
+  list-style-type: none;
+}
+.header .header__menu .header__list .header__item {
+  display: grid;
+  align-items: center;
+  position: relative;
+}
+.header .header__menu .header__list .header__item a {
+  color: white;
+  transition: 0.5s;
+}
+.header .header__menu .header__list .header__item::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0px;
+  height: 1px;
+  background-color: white;
+  transition: 0.5s;
+}
+.header .header__menu .header__list .header__item:hover a {
+  color: #A30000;
+}
+.header .header__menu .header__list .header__item:hover::before {
+  width: 100%;
+  height: 1px;
+  background-color: #A30000;
+}
+.header .contacts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5vw;
+}
+.header .contacts-container .header__contacts .number {
+  display: flex;
+  justify-content: center;
+}
+.header .contacts-container .header__contacts .number a {
+  color: white;
+  font-size: 1.5vw;
+  transition: 0.5s;
+}
+.header .contacts-container .header__contacts .number:hover a {
+  color: #A30000;
+}
+.header .contacts-container .header__contacts address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-style: normal;
+  font-size: 0.75vw;
 }/*# sourceMappingURL=index.css.map */

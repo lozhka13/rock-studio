@@ -130,7 +130,6 @@ h3 {
   }
 }
 .master-class {
-  min-height: 100vh;
   background-image: url("../assets/background/main-first-section-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -392,7 +391,6 @@ h3 {
 }
 
 .who-we-are {
-  min-height: 100vh;
   background: linear-gradient(-45deg, #710f0f, #A30000, #710f0f, #A30000, #710f0f, #A30000);
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;

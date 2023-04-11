@@ -6,7 +6,7 @@
   src: url("../assets/fonts/Bicubik/Bicubik.OTF");
 }
 :root {
-  font-size: 16px;
+  font-size: calc(24px + 1.25vw);
 }
 @media screen and (max-width: 962px) {
   :root {
@@ -50,7 +50,7 @@ p {
 }
 
 .h1 {
-  font-size: 4vw;
+  font-size: 1.5rem;
   font-family: "Bicubik";
 }
 
@@ -1055,12 +1055,13 @@ h3 {
 }
 
 .header {
+  width: 100%;
   animation: opacityFromZeroToOne 2s forwards;
 }
 .header .header-container {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 2.5vw;
 }
 .header .header-container .header__logo-container {
   width: 14vw;

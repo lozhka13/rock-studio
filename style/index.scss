@@ -8,7 +8,7 @@
 }
 
 :root {
-  font-size: 16px;
+  font-size: calc(24px + 16 * (100vw / 1280));
 
   @media screen and (max-width: 962px) {
     font-size: 12px;
@@ -56,7 +56,7 @@ p {
 }
 
 .h1 {
-  font-size: 4vw;
+  font-size: 1.5rem;
   font-family: 'Bicubik';
 }
 
@@ -179,12 +179,12 @@ h3 {
 }
 
 .master-class {
+  
   // min-height: 100vh;
   background-image: url('../assets/background/main-first-section-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 
 
   .master-class__content {
@@ -1401,16 +1401,14 @@ h3 {
 
 
 .header {
+  width: 100%;
 
   animation: opacityFromZeroToOne 2s forwards;
 
   .header-container {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    gap: 2.5vw;
-
-
-
 
     .header__logo-container {
       width: 14vw;

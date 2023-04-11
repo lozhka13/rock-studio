@@ -626,34 +626,33 @@ h3 {
 }
 .unique-project .unique-project__container {
   padding-top: 3vw;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(auto);
+  display: flex;
   gap: 2vw;
 }
 .unique-project .unique-project__container .text-container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 50%;
   gap: 1vw;
 }
 .unique-project .unique-project__container p {
-  font-size: 1.8vw;
+  font-size: 1.5vw;
 }
 .unique-project .unique-project__container .img-container {
-  display: grid;
+  display: flex;
   align-items: center;
   height: 100%;
 }
 .unique-project .unique-project__container .img-container img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: flex;
 }
 .unique-project .unique-project__container-bottom {
   padding-top: 3vw;
+  display: flex;
 }
 .unique-project .unique-project__container-bottom p {
-  font-size: 1.89vw;
+  font-size: 1.5vw;
 }
 .unique-project .unique-project__button-container {
   padding-top: 3vw;

@@ -24,7 +24,7 @@ html {
 }
 
 li a {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 * a {
@@ -710,7 +710,7 @@ h3 {
   transition: 0.5s;
 }
 .footer .footer-container .footer__logo-container:hover a .cls-1 {
-  fill: black;
+  fill: #A30000;
 }
 .footer .footer__menu {
   display: grid;
@@ -723,16 +723,16 @@ h3 {
   gap: 2vw;
   list-style-type: none;
 }
-.footer .footer__menu .footer__list .footer__item {
+.footer .footer__menu .footer__list li {
   display: grid;
   align-items: center;
   position: relative;
 }
-.footer .footer__menu .footer__list .footer__item a {
+.footer .footer__menu .footer__list li a {
   color: white;
   transition: 0.5s;
 }
-.footer .footer__menu .footer__list .footer__item::before {
+.footer .footer__menu .footer__list li::before {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -742,13 +742,13 @@ h3 {
   background-color: white;
   transition: 0.5s;
 }
-.footer .footer__menu .footer__list .footer__item:hover a {
-  color: black;
+.footer .footer__menu .footer__list li:hover a {
+  color: #A30000;
 }
-.footer .footer__menu .footer__list .footer__item:hover::before {
+.footer .footer__menu .footer__list li:hover::before {
   width: 100%;
   height: 1px;
-  background-color: black;
+  background-color: #A30000;
 }
 .footer .contacts-container {
   display: grid;
@@ -906,6 +906,10 @@ h3 {
   padding-top: 2vw;
   display: flex;
   justify-content: center;
+}
+
+.jcfs {
+  justify-content: flex-start;
 }
 
 .wrapper {

@@ -449,16 +449,8 @@ p {
   height: 100%;
   position: relative;
 }
-.who-we-are .container__top .who-we-are__container-top__right .sandler-img-text {
-  position: absolute;
-  bottom: 1vw;
-  left: -10vw;
-}
 .who-we-are .container__top .who-we-are__container-top__right::before {
   background-image: url("../assets/sandler-text.png");
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .who-we-are .container__bottom {
   display: grid;

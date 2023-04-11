@@ -608,16 +608,16 @@ p {
         position: relative;
 
         .sandler-img-text {
-          position: absolute;
-          bottom: 1vw;
-          left: -10vw;
+          // position: absolute;
+          // bottom: 1vw;
+          // left: -10vw;
         }
 
         &::before {
           background-image: url('../assets/sandler-text.png');
-          position: absolute;
-          top: 0;
-          left: 0;
+          // position: absolute;
+          // top: 0;
+          // left: 0;
         }
       }
     }

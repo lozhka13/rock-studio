@@ -25,14 +25,14 @@ html {
 
 li {
   a {
-    font-size: 2rem;
+    font-size: 2vw;
   }
 }
 
 * {
   a {
     color: inherit;
-    font-size: 1rem;
+    font-size: 1vw;
   }
 }
 
@@ -45,18 +45,23 @@ li {
   text-decoration: none;
 }
 
-h2 {
-  font-size: 2rem;
+.h2 {
+  font-size: 3.5vw;
+  font-family: "Bicubik";
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   // font-weight: 300;
 }
 
 .h1 {
-  font-size: 4rem;
+  font-size: 4vw;
   font-family: 'Bicubik';
+}
+
+h3 {
+  font-size: 2vw;
 }
 
 // @keyframes shake {
@@ -174,6 +179,7 @@ p {
 }
 
 .master-class {
+  height: 100vh;
   background-image: url('../assets/background/main-first-section-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -273,7 +279,7 @@ p {
 
           a {
             color: white;
-            // font-size: 1.5vw;
+            font-size: 1.5vw;
             transition: .5s;
           }
 
@@ -532,6 +538,7 @@ p {
 }
 
 .who-we-are {
+  min-height: 100vh;
   background: linear-gradient(-45deg, #710f0f, #A30000, #710f0f, #A30000, #710f0f, #A30000);
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;
@@ -551,6 +558,8 @@ p {
           padding-top: 2vw;
           display: grid;
           grid-template-columns: auto auto;
+          align-items: center;
+          justify-content: center;
 
           grid-template-areas:
             "a a"
@@ -560,10 +569,9 @@ p {
           .star {
             padding-left: 6vw;
             position: relative;
-            color: white;
+
             grid-column-start: 1;
             grid-column-end: 3;
-            font-size: 1.5vw;
 
             &::first-line {
               font-weight: 700;
@@ -580,11 +588,6 @@ p {
             }
           }
 
-          p {
-            font-size: 1.5vw;
-            color: white;
-          }
-
           .facts-container {
             padding-top: 2vw;
 
@@ -593,7 +596,6 @@ p {
 
               p {
                 padding-left: 2vw;
-                display: flex;
               }
             }
           }
@@ -606,23 +608,20 @@ p {
           position: relative;
 
           .sandler-img-text {
-            // position: absolute;
-            // bottom: 1vw;
-            // left: -10vw;
+            position: absolute;
+            bottom: 1vw;
+            left: -10vw;
           }
 
           &::before {
             background-image: url('../assets/sandler-text.png');
-            // position: absolute;
-            // top: 0;
-            // left: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
           }
         }
       }
-
     }
-
-
 
     .container__bottom {
       display: grid;
@@ -633,23 +632,22 @@ p {
       &__img-container {
         grid-column-start: 1;
         grid-column-end: 2;
+        display: flex;
+        align-items: flex-end;
 
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          position: relative;
-          bottom: -.4vw;
         }
       }
 
       &__text-container {
 
-
-        h1 {
+        h2 {
           position: relative;
 
-          span {
+          .inner-span {
             font-family: 'Bicubik';
             color: black;
           }
@@ -694,14 +692,13 @@ p {
   background-size: cover;
 
   .form {
-    padding: 1vw 2vw;
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1vw;
-
 
     select {
       width: 25vw;
@@ -1029,7 +1026,7 @@ p {
     justify-content: center;
     gap: 1.5vw;
 
-    .footer__contacts {
+    .header__contacts {
 
       .number {
         display: flex;
@@ -1037,7 +1034,14 @@ p {
 
         a {
           color: white;
-          // font-size: 1.5vw;
+          font-size: 1.5vw;
+          transition: .5s;
+        }
+
+        &:hover {
+          a {
+            color: $red;
+          }
         }
       }
 
@@ -1179,57 +1183,60 @@ p {
     align-items: center;
   }
 
-  //   .swiper-wrapper {
-  //     overflow: hidden;
-  //     width: 80%;
-  //   }
-
-  //   .swiper-button-next {
-  //     color: $red;
-  //   }
-
-  //   .swiper-button-prev {
-  //     color: $red;
-  //   }
-
-  //   .swiper-pagination {
-  //     color: $red;
-  //   }
-
-  //   .swiper-pagination-bullet-active {
-  //     background-color: $red;
-  //   }
-  // }
-
-  // .swiper-slide {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   width: 80%;
-  // }
-
-  // .swiper-slide img {
-  //   display: block;
-  //   width: 100%;
-  //   height: 100%;
-  //   object-fit: cover;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
-
-  .button-container {
-    padding-top: 2vw;
-    display: flex;
-    justify-content: center;
+  .swiper-wrapper {
+    overflow: hidden;
+    width: 80%;
   }
+
+  .swiper-button-next {
+    color: $red;
+  }
+
+  .swiper-button-prev {
+    color: $red;
+  }
+
+  .swiper-pagination {
+    color: $red;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $red;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  padding-top: 2vw;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper {
   padding: 2vw 5vw;
+  width: 100%;
+  height: 100%;
 }
 
 .blackout {
+  width: 100%;
+  height: 100%;
   animation: blackout 3s forwards;
 }
 
@@ -1298,22 +1305,19 @@ p {
   padding: 0.75vw 1.6875vw;
 
   background-color: transparent;
-  // border-radius: 6.66vw;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  transform: translate(0, 0);
-  backface-visibility: hidden;
   transition: .5s;
 
   a:link,
   a:visited {
     color: white;
-    font-size: 1vw;
+    font-size: 0.5vw;
     font-weight: 300;
-
+    font-size: 1vw;
     transition: .5s;
   }
 
@@ -1324,6 +1328,7 @@ p {
     a:link,
     a:visited {
       color: black;
+
     }
 
   }

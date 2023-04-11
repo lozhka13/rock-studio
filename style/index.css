@@ -24,12 +24,12 @@ html {
 }
 
 li a {
-  font-size: 2rem;
+  font-size: 2vw;
 }
 
 * a {
   color: inherit;
-  font-size: 1rem;
+  font-size: 1vw;
 }
 
 * {
@@ -40,17 +40,22 @@ li a {
   text-decoration: none;
 }
 
-h2 {
-  font-size: 2rem;
+.h2 {
+  font-size: 3.5vw;
+  font-family: "Bicubik";
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 .h1 {
-  font-size: 4rem;
+  font-size: 4vw;
   font-family: "Bicubik";
+}
+
+h3 {
+  font-size: 2vw;
 }
 
 @keyframes blackout {
@@ -125,6 +130,7 @@ p {
   }
 }
 .master-class {
+  height: 100vh;
   background-image: url("../assets/background/main-first-section-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -198,6 +204,7 @@ p {
 }
 .master-class .header .contacts-container .header__contacts .number a {
   color: white;
+  font-size: 1.5vw;
   transition: 0.5s;
 }
 .master-class .header .contacts-container .header__contacts .number:hover a {
@@ -385,6 +392,7 @@ p {
 }
 
 .who-we-are {
+  min-height: 100vh;
   background: linear-gradient(-45deg, #710f0f, #A30000, #710f0f, #A30000, #710f0f, #A30000);
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;
@@ -404,15 +412,15 @@ p {
   padding-top: 2vw;
   display: grid;
   grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
   grid-template-areas: "a a" "b c";
 }
 .who-we-are .wrapper .container__top .who-we-are__container-top__left .star {
   padding-left: 6vw;
   position: relative;
-  color: white;
   grid-column-start: 1;
   grid-column-end: 3;
-  font-size: 1.5vw;
 }
 .who-we-are .wrapper .container__top .who-we-are__container-top__left .star::first-line {
   font-weight: 700;
@@ -426,10 +434,6 @@ p {
   color: black;
   font-family: "Bicubik";
 }
-.who-we-are .wrapper .container__top .who-we-are__container-top__left p {
-  font-size: 1.5vw;
-  color: white;
-}
 .who-we-are .wrapper .container__top .who-we-are__container-top__left .facts-container {
   padding-top: 2vw;
 }
@@ -438,7 +442,6 @@ p {
 }
 .who-we-are .wrapper .container__top .who-we-are__container-top__left .facts-container .facts p {
   padding-left: 2vw;
-  display: flex;
 }
 .who-we-are .wrapper .container__top .who-we-are__container-top__right {
   display: grid;
@@ -446,8 +449,16 @@ p {
   height: 100%;
   position: relative;
 }
+.who-we-are .wrapper .container__top .who-we-are__container-top__right .sandler-img-text {
+  position: absolute;
+  bottom: 1vw;
+  left: -10vw;
+}
 .who-we-are .wrapper .container__top .who-we-are__container-top__right::before {
   background-image: url("../assets/sandler-text.png");
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .who-we-are .wrapper .container__bottom {
   display: grid;
@@ -457,23 +468,23 @@ p {
 .who-we-are .wrapper .container__bottom__img-container {
   grid-column-start: 1;
   grid-column-end: 2;
+  display: flex;
+  align-items: flex-end;
 }
 .who-we-are .wrapper .container__bottom__img-container img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
-  bottom: -0.4vw;
 }
-.who-we-are .wrapper .container__bottom__text-container h1 {
+.who-we-are .wrapper .container__bottom__text-container h2 {
   position: relative;
 }
-.who-we-are .wrapper .container__bottom__text-container h1 span {
+.who-we-are .wrapper .container__bottom__text-container h2 .inner-span {
   font-family: "Bicubik";
   color: black;
 }
-.who-we-are .wrapper .container__bottom__text-container h1::before {
+.who-we-are .wrapper .container__bottom__text-container h2::before {
   content: "«";
   position: absolute;
   top: -6vw;
@@ -482,7 +493,7 @@ p {
   color: black;
   font-family: "Bicubik";
 }
-.who-we-are .wrapper .container__bottom__text-container h1:after {
+.who-we-are .wrapper .container__bottom__text-container h2:after {
   content: "– Игорь Борисович Сандлер";
   font-family: "Montserrat";
   font-size: 1.25vw;
@@ -506,10 +517,10 @@ p {
   background-size: cover;
 }
 .start-form .form {
-  padding: 1vw 2vw;
-  display: grid;
-  grid-template-columns: repeat(1, auto);
-  grid-template-rows: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1vw;
@@ -748,14 +759,19 @@ p {
   justify-content: center;
   gap: 1.5vw;
 }
-.footer .contacts-container .footer__contacts .number {
+.footer .contacts-container .header__contacts .number {
   display: flex;
   justify-content: center;
 }
-.footer .contacts-container .footer__contacts .number a {
+.footer .contacts-container .header__contacts .number a {
   color: white;
+  font-size: 1.5vw;
+  transition: 0.5s;
 }
-.footer .contacts-container .footer__contacts address {
+.footer .contacts-container .header__contacts .number:hover a {
+  color: #A30000;
+}
+.footer .contacts-container .header__contacts address {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -853,7 +869,42 @@ p {
   justify-content: center;
   align-items: center;
 }
-.students-pics .button-container {
+.students-pics .swiper-wrapper {
+  overflow: hidden;
+  width: 80%;
+}
+.students-pics .swiper-button-next {
+  color: #A30000;
+}
+.students-pics .swiper-button-prev {
+  color: #A30000;
+}
+.students-pics .swiper-pagination {
+  color: #A30000;
+}
+.students-pics .swiper-pagination-bullet-active {
+  background-color: #A30000;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
   padding-top: 2vw;
   display: flex;
   justify-content: center;
@@ -861,9 +912,13 @@ p {
 
 .wrapper {
   padding: 2vw 5vw;
+  width: 100%;
+  height: 100%;
 }
 
 .blackout {
+  width: 100%;
+  height: 100%;
   animation: blackout 3s forwards;
 }
 
@@ -921,15 +976,14 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(0, 0);
-  backface-visibility: hidden;
   transition: 0.5s;
 }
 .black-button a:link,
 .black-button a:visited {
   color: white;
-  font-size: 1vw;
+  font-size: 0.5vw;
   font-weight: 300;
+  font-size: 1vw;
   transition: 0.5s;
 }
 .black-button:hover {
